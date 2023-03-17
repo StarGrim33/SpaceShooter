@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[RequireComponent(typeof(Rigidbody))]
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _speed;
@@ -40,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         position.x = Mathf.Clamp(position.x, _minWidth, _maxWidth);
         position.y = Mathf.Clamp(position.y, _minHeight, _maxHeight);
         transform.position = position;
-
+        Debug.Log("2d");
         _rb.velocity = _moveDirection * (_speed * Time.deltaTime);
     }
 
