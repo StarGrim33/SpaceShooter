@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: f00861548b6fd73428356a56d12956be
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_0
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 631
+        width: 274
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd0e6cbc03c1bd4095bac1e2ad1ae8d
+      internalID: 595733175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_1
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 764
+        width: 10
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5409bbd8f1a2ba5469409dfe910ff6ab
+      internalID: -993416247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 613
+        width: 223
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da94c33a79dd5274ba1689d26aa05c49
+      internalID: 989452847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_3
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 636
+        width: 256
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2787ce3c6c1cd5f4380a5b48ce5f19df
+      internalID: 1421532927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_4
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 634
+        width: 173
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79e0105ae5fa24d4c8179520d6e98187
+      internalID: 320234292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_5
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 611
+        width: 225
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676ebd70ee9a7274ca5ba9d993700ebb
+      internalID: 1070261109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_6
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 399
+        width: 245
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45fa8860603304d499926619194dcdbe
+      internalID: -63183882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_7
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 391
+        width: 202
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf552f6b31b685d4e8dce57ac1dbc76b
+      internalID: 418928918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_8
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 404
+        width: 243
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a6b8a54e35e4e14d927921abd7dfcc9
+      internalID: -1841098415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_9
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 102
+        width: 343
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb7aede85c88ca48b14e75b8436aafb
+      internalID: 1233454285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 85
+        width: 359
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39edea836fa04624ba24fec2733b32c1
+      internalID: 1431441369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
+        (1)_11
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 139
+        width: 404
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb4207acd58a9284d90aba7798b0356b
+      internalID: -1927989837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_9: 1233454285
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_7: 418928918
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_5: 1070261109
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_8: -1841098415
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_2: 989452847
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_6: -63183882
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_11: -1927989837
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_4: 320234292
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_3: 1421532927
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_10: 1431441369
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_1: -993416247
+      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_0: 595733175
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
