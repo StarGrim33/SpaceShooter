@@ -6,7 +6,6 @@ using UnityEngine.Events;
 public class Health : MonoBehaviour
 {
     [SerializeField] private int _health;
-    [SerializeField] private int _maxHealth;
 
     public event UnityAction<int> Reduced;
     public event UnityAction<int> Incresead;
@@ -16,11 +15,9 @@ public class Health : MonoBehaviour
         get { return _health; }
         private set
         {
-            _health = Mathf.Clamp(value, 0, _maxHealth);
+            _health = Mathf.Clamp(value, 0, _health);
         }
     }
-
-    public int MaxHealth => _maxHealth;
 
     public void Heal(int heal)
     {

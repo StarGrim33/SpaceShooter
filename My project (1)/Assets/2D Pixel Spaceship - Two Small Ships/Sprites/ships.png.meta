@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f00861548b6fd73428356a56d12956be
+guid: 6106038d5b5ef7449b41f9e5331716cf
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -141,8 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_0
+      name: ships_0
       rect:
         serializedVersion: 2
         x: 539
@@ -156,15 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5dd0e6cbc03c1bd4095bac1e2ad1ae8d
-      internalID: 595733175
+      spriteID: 5b693edde6949ff46bc7b47f5e4acd54
+      internalID: 1234118724
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_1
+      name: ships_1
       rect:
         serializedVersion: 2
         x: 940
@@ -178,15 +176,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5409bbd8f1a2ba5469409dfe910ff6ab
-      internalID: -993416247
+      spriteID: c1dcbcb0482ce2546a9b8a3ac059eeea
+      internalID: -92413030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_2
+      name: ships_2
       rect:
         serializedVersion: 2
         x: 37
@@ -200,15 +197,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da94c33a79dd5274ba1689d26aa05c49
-      internalID: 989452847
+      spriteID: 2ccb1ed1b159c9d4b9ca4ff212714679
+      internalID: 1175246079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_3
+      name: ships_3
       rect:
         serializedVersion: 2
         x: 272
@@ -222,15 +218,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2787ce3c6c1cd5f4380a5b48ce5f19df
-      internalID: 1421532927
+      spriteID: f72a2ecdfe5d3134c951d25f90ced801
+      internalID: -1191797959
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_4
+      name: ships_4
       rect:
         serializedVersion: 2
         x: 838
@@ -244,15 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79e0105ae5fa24d4c8179520d6e98187
-      internalID: 320234292
+      spriteID: 6d0dfb878a2663b4687c53f5ca00dbbf
+      internalID: 1917609652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_5
+      name: ships_5
       rect:
         serializedVersion: 2
         x: 1055
@@ -266,15 +260,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 676ebd70ee9a7274ca5ba9d993700ebb
-      internalID: 1070261109
+      spriteID: 198a764f640a15a43aadcd70e6cc3c5e
+      internalID: -275403614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_6
+      name: ships_6
       rect:
         serializedVersion: 2
         x: 147
@@ -288,15 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 45fa8860603304d499926619194dcdbe
-      internalID: -63183882
+      spriteID: 551c3f6aeb5a61043bc11ef05ea0a1bf
+      internalID: -298096971
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_7
+      name: ships_7
       rect:
         serializedVersion: 2
         x: 445
@@ -310,15 +302,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf552f6b31b685d4e8dce57ac1dbc76b
-      internalID: 418928918
+      spriteID: 7db91fbef8bfff34dbd24c93110bd691
+      internalID: -1209131900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_8
+      name: ships_8
       rect:
         serializedVersion: 2
         x: 703
@@ -332,21 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9a6b8a54e35e4e14d927921abd7dfcc9
-      internalID: -1841098415
+      spriteID: f3d5797a955b15e49a39556dbf633b87
+      internalID: -531723084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_9
+      name: ships_9
       rect:
         serializedVersion: 2
-        x: 876
-        y: 102
+        x: 874
+        y: 106
         width: 343
-        height: 262
+        height: 259
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -354,15 +344,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1bb7aede85c88ca48b14e75b8436aafb
-      internalID: 1233454285
+      spriteID: 576db4dda39cd014d9de3628c7d66720
+      internalID: -1428891178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_10
+      name: ships_10
       rect:
         serializedVersion: 2
         x: 0
@@ -376,15 +365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 39edea836fa04624ba24fec2733b32c1
-      internalID: 1431441369
+      spriteID: 4fe44e79f3c712742b22b2d50bb8dec6
+      internalID: -1389981447
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom
-        (1)_11
+      name: ships_11
       rect:
         serializedVersion: 2
         x: 411
@@ -398,8 +386,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb4207acd58a9284d90aba7798b0356b
-      internalID: -1927989837
+      spriteID: f69b50a88138c1049bd712e49ad6dddd
+      internalID: 1540384423
       vertices: []
       indices: 
       edges: []
@@ -415,18 +403,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_9: 1233454285
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_7: 418928918
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_5: 1070261109
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_8: -1841098415
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_2: 989452847
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_6: -63183882
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_11: -1927989837
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_4: 320234292
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_3: 1421532927
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_10: 1431441369
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_1: -993416247
-      stock-vector-a-set-of-various-space-ship-for-creating-d-side-scrolling-space-shooter-video-games-776160814-PhotoRoom.png-PhotoRoom (1)_0: 595733175
+      ships_4: 1917609652
+      ships_9: -1428891178
+      ships_7: -1209131900
+      ships_1: -92413030
+      ships_8: -531723084
+      ships_11: 1540384423
+      ships_3: -1191797959
+      ships_2: 1175246079
+      ships_6: -298096971
+      ships_5: -275403614
+      ships_10: -1389981447
+      ships_0: 1234118724
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -3,9 +3,10 @@ using UnityEngine;
 public class Enemy : Unit
 {
     [SerializeField] private int _health;
-    [SerializeField] private float _speed;
-    [SerializeField] private int _damage;
-    [SerializeField] private Bullet _bullet;
+    [SerializeField] private int _reward;
+    [SerializeField] private Player _target;
+
+    public Player Target => _target;
 
     public int EnemyHealth
     {
@@ -13,8 +14,8 @@ public class Enemy : Unit
         { return _health; }
         private set
         {
-            if(_health <= 0)
-                Destroy(gameObject);
+            if (_health <= 0)
+                Die();
 
             _health = Mathf.Clamp(value, 0, _health);
         }
@@ -25,8 +26,8 @@ public class Enemy : Unit
         EnemyHealth -= damage;
     }
 
-    public virtual void Attack()
+    private void Die()
     {
-        Instantiate(_bullet, transform.position, Quaternion.identity);
+        gameObject.SetActive(false);
     }
 }

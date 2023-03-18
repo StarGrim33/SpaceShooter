@@ -2,13 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(PoolObject))]
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private int _damage;
     [SerializeField] private float _speed;
+    [SerializeField] private float _lifeTime;
 
-    private Transform _shooter;
-    private Vector3 _direction;
+    private PoolObject _poolObject;
+
+    private void Start()
+    {
+        _poolObject = GetComponent<PoolObject>();
+    }
+
+    private void OnEnable()
+    {
+        StartCoroutine(Destroy());
+    }
 
     private void Update()
     {
@@ -20,12 +31,14 @@ public class Bullet : MonoBehaviour
         if (collision.TryGetComponent<Enemy>(out Enemy enemy))
         {
             enemy.TakeDamage(_damage);
-            Destroy(gameObject);
+            _poolObject.ReturnToPool();
         }
+    }
 
-        if(collision.TryGetComponent<Border>(out Border border))
-        {
-            Destroy(gameObject);
-        }
+    private IEnumerator Destroy()
+    {
+        var waitForSeconds = new WaitForSeconds(_lifeTime);
+        yield return waitForSeconds;
+        _poolObject.ReturnToPool();
     }
 }

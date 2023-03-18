@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1841750775598199244}
   - component: {fileID: 1969084896527763550}
   - component: {fileID: 3021144253031942006}
+  - component: {fileID: 8507836688552057787}
   m_Layer: 0
   m_Name: fireball-blue-big
   m_TagString: Untagged
@@ -138,3 +139,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _damage: 10
   _speed: 100
+  _lifeTime: 2
+--- !u!114 &8507836688552057787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019480068096796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62adf27d686670249af13d5638f4b437, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
