@@ -6,7 +6,7 @@ public class Blaster : Weapon
 
     public override void Shoot(Transform shootPoint)
     {
-        GameObject instance = Pool.SharedInstance.GetPooledObject();
+        GameObject instance = Pool.SharedInstance.GetPlayerBullets();
         instance.transform.position = shootPoint.position;
         instance.SetActive(true);
     }

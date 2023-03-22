@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 public class Pool : MonoBehaviour
@@ -9,9 +6,14 @@ public class Pool : MonoBehaviour
     public static Pool SharedInstance;
 
     [SerializeField] private int _poolCount;
-    [SerializeField] private GameObject _objectToPool;
-    [SerializeField] private GameObject _container;
-    [SerializeField] private List<GameObject> _pooledObjects;
+    [SerializeField] private GameObject _playerBullet;
+    [SerializeField] private GameObject _playerBulletsContainer;
+    [SerializeField] private List<GameObject> _playerBullets;
+
+    [SerializeField] private List<GameObject> _enemyBullets;
+    [SerializeField] private GameObject _enemyBullet;
+    [SerializeField] private GameObject _enemyBulletsContainer;
+
 
     private void Awake()
     {
@@ -20,23 +22,42 @@ public class Pool : MonoBehaviour
 
     private void Start()
     {
-        _pooledObjects = new List<GameObject>();
-        GameObject newObject;
+        _playerBullets = new List<GameObject>();
 
-        for(int i = 0; i < _poolCount; i++)
+        for (int i = 0; i < _poolCount; i++)
         {
-            newObject = Instantiate(_objectToPool, _container.transform);
-            newObject.SetActive(false);
-            _pooledObjects.Add(newObject);
+            var playerBullets = Instantiate(_playerBullet, _playerBulletsContainer.transform);
+            playerBullets.SetActive(false);
+            _playerBullets.Add(playerBullets);
+        }
+
+        _enemyBullets = new List<GameObject>();
+
+        for (int i = 0; i < _poolCount; i++)
+        {
+            var enemyBullets = Instantiate(_enemyBullet, _enemyBulletsContainer.transform);
+            enemyBullets.SetActive(false);
+            _enemyBullets.Add(enemyBullets);
         }
     }
 
-    public GameObject GetPooledObject() 
+    public GameObject GetPlayerBullets()
     {
-        for (int i = 0; i < _poolCount;i++)
+        for (int i = 0; i < _poolCount; i++)
         {
-            if (!_pooledObjects[i].activeInHierarchy)
-                return _pooledObjects[i];
+            if (!_playerBullets[i].activeInHierarchy)
+                return _playerBullets[i];
+        }
+
+        return null;
+    }
+
+    public GameObject GetEnemyBullets()
+    {
+        for (int i = 0; i < _poolCount; i++)
+        {
+            if (!_enemyBullets[i].activeInHierarchy)
+                return _enemyBullets[i];
         }
 
         return null;

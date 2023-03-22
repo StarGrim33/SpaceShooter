@@ -97,10 +97,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4995f76c0b1c7804e83f4e7fbf8c6e46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _container: {fileID: 0}
-  _maxCapacity: 15
   _label: Blaster
   _price: 0
   _sprite: {fileID: 478621271, guid: 27036c87f5961d443bb257487a5892b5, type: 3}
   _isBuyed: 1
   _bullet: {fileID: 3021144253031942006, guid: 1740469607c5ef74a9dce354e6c48998, type: 3}
+  _shootPoint: {fileID: 5525576492961727180, guid: 97cace36bdd02b446a54e94067f193cb, type: 3}

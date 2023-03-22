@@ -4,9 +4,13 @@ public class Enemy : Unit
 {
     [SerializeField] private int _health;
     [SerializeField] private int _reward;
-    [SerializeField] private Player _target;
+    private bool _canBeDestroyed = false;
 
-    public Player Target => _target;
+    private void Update()
+    {
+        if (transform.position.x < 17f)
+            _canBeDestroyed = true;
+    }
 
     public int EnemyHealth
     {
@@ -23,10 +27,11 @@ public class Enemy : Unit
 
     public override void TakeDamage(int damage)
     {
-        EnemyHealth -= damage;
+        if (_canBeDestroyed)
+            EnemyHealth -= damage;
     }
 
-    private void Die()
+    public void Die()
     {
         gameObject.SetActive(false);
     }

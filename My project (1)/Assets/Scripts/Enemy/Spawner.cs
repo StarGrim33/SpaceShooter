@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
     [SerializeField] private GameObject _enemyPrefab;
     [SerializeField] private int _secondsBetweenSpawn;
     [SerializeField] private Transform[] _spawnPoints;
+    [SerializeField] private int _amount;
 
     private float _elapsedTime = 0;
 
@@ -19,14 +20,6 @@ public class Spawner : MonoBehaviour
             _elapsedTime = 0;
 
             int spawnPointNumber = Random.Range(0, _spawnPoints.Length);
-            Spawn(_spawnPoints[spawnPointNumber]);
         }
-    }
-
-    private void Spawn(Transform position)
-    {
-        GameObject instance = Pool.SharedInstance.GetPooledObject();
-        instance.transform.position = position.transform.position;
-        instance.SetActive(true);
     }
 }

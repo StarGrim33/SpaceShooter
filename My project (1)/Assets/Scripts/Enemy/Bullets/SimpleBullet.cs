@@ -1,20 +1,26 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class SimpleBullet : MonoBehaviour
 {
     [SerializeField] private int _damage;
     [SerializeField] private float _speed;
     [SerializeField] private float _lifeTime;
 
-    private Transform _target;
+    public float Speed => _speed;
 
     private PoolObject _poolObject;
 
-    private void Start()
+    private void Awake()
     {
         _poolObject = GetComponent<PoolObject>();
-        _target = FindObjectOfType<Player>().transform;
+    }
+
+    private void Update()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, transform.position + Vector3.left, _speed * Time.deltaTime);
     }
 
     private void OnEnable()
@@ -22,20 +28,12 @@ public class SimpleBullet : MonoBehaviour
         StartCoroutine(Destroy());
     }
 
-    private void Update()
-    {
-        float distance = Vector2.Distance(transform.position, _target.position);
-
-        if (distance > 0.1f)
-            transform.position = Vector2.MoveTowards(transform.position, _target.position, _speed * Time.deltaTime);
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Player>(out Player player))
         {
             player.TakeDamage(_damage);
-            Destroy(gameObject);
+            _poolObject.ReturnToPool();
         }
     }
 
@@ -43,6 +41,6 @@ public class SimpleBullet : MonoBehaviour
     {
         var waitForSeconds = new WaitForSeconds(_lifeTime);
         yield return waitForSeconds;
-        Destroy(gameObject);
+        _poolObject.ReturnToPool();
     }
 }
