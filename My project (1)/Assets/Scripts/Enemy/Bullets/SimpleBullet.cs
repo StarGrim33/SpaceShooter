@@ -35,6 +35,11 @@ public class SimpleBullet : MonoBehaviour
             player.TakeDamage(_damage);
             _poolObject.ReturnToPool();
         }
+
+        if (collision.TryGetComponent<Bullet>(out Bullet bullet))
+        {
+            _poolObject.ReturnToPool();
+        }
     }
 
     private IEnumerator Destroy()

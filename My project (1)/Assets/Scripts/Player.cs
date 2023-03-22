@@ -9,7 +9,7 @@ public class Player : Unit
     [SerializeField] private Bullet _bullet;
     [SerializeField] private List<Weapon> _weapons;
 
-    public int Coins => _coins;
+    public int Coins {get { return _coins; } private set { _coins = value; } }
 
     private Animator _animator;
     private Health _health;
@@ -41,5 +41,10 @@ public class Player : Unit
     public void Heal(int heal)
     {
         _health.Heal(heal);
+    }
+
+    public void AddCoins(int money)
+    {
+        Coins += money;
     }
 }
