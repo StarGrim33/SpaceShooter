@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Animator), typeof(Health))]
 public class Player : Unit
@@ -8,8 +9,11 @@ public class Player : Unit
     [SerializeField] private Transform _shootPosition;
     [SerializeField] private Bullet _bullet;
     [SerializeField] private List<Weapon> _weapons;
+    [SerializeField] private AudioClip _playSound;
 
     public int Coins {get { return _coins; } private set { _coins = value; } }
+
+    public event UnityAction MoneyChanged;
 
     private Animator _animator;
     private Health _health;
@@ -25,7 +29,10 @@ public class Player : Unit
     private void Update()
     {
         if (Input.GetButtonDown("Fire1"))
+        {
             _currentWeapon.Shoot(_shootPosition);
+            AudioSource.PlayClipAtPoint(_playSound, transform.position, 0.2f);
+        }
     }
 
     public override void TakeDamage(int damage)
@@ -33,18 +40,14 @@ public class Player : Unit
         _health.TakeDamage(damage);
     }
 
-    public void AddCoin(int value)
+    public void AddCoins(int value)
     {
-        _coins += value;
+        Coins += value;
+        MoneyChanged.Invoke();
     }
 
     public void Heal(int heal)
     {
         _health.Heal(heal);
-    }
-
-    public void AddCoins(int money)
-    {
-        Coins += money;
     }
 }
