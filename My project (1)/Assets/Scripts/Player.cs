@@ -10,6 +10,7 @@ public class Player : Unit
     [SerializeField] private Bullet _bullet;
     [SerializeField] private List<Weapon> _weapons;
     [SerializeField] private AudioClip _playSound;
+    [SerializeField] private ShieldController _shieldController;
 
     public int Coins {get { return _coins; } private set { _coins = value; } }
 
@@ -37,7 +38,13 @@ public class Player : Unit
 
     public override void TakeDamage(int damage)
     {
-        _health.TakeDamage(damage);
+        if(_shieldController.IsShieldActive)
+        {
+            _shieldController.TakeDamage(damage);
+        }
+
+        else if(_shieldController.IsShieldActive == false) 
+            _health.TakeDamage(damage);
     }
 
     public void AddCoins(int value)

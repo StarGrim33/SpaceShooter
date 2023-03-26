@@ -6,17 +6,12 @@ public class Enemy : Unit
     [SerializeField] private int _health;
     [SerializeField] private int _reward;
     [SerializeField] private GameObject[] _dieEffects;
+    [SerializeField] private GameObject[] _buffs;
 
     private bool _canBeDestroyed = false;
     public event UnityAction<Enemy> Dying;
 
     public int Reward => _reward;
-
-    private void Update()
-    {
-        if (transform.position.x < 17f)
-            _canBeDestroyed = true;
-    }
 
     public int EnemyHealth
     {
@@ -31,6 +26,12 @@ public class Enemy : Unit
         }
     }
 
+    private void Update()
+    {
+        if (transform.position.x < 17f)
+            _canBeDestroyed = true;
+    }
+
     public override void TakeDamage(int damage)
     {
         if (_canBeDestroyed)
@@ -39,8 +40,19 @@ public class Enemy : Unit
 
     public void Die()
     {
+        int minNumber = 0;
+        int maxNumber = 100;
+        int chance = 50;
+
         var randomEffect = Random.Range(0, _dieEffects.Length);
         Instantiate(_dieEffects[randomEffect], transform.position, Quaternion.identity);
+
+        if (Random.Range(minNumber, maxNumber) <= chance)
+        {
+            var randomBuff = Random.Range(0, _buffs.Length);
+            Instantiate(_buffs[randomBuff], transform.position, Quaternion.identity);
+        }
+
         Dying?.Invoke(this);
         gameObject.SetActive(false);
     }

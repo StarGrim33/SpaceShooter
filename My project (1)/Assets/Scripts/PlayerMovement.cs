@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +9,14 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float _maxHeight;
     [SerializeField] private float _minWidth;
     [SerializeField] private float _maxWidth;
+
+    private float _originalSpeed;
+
+    public float Speed
+    {
+        get { return _speed; }
+        private set { _speed = value; }
+    }
 
     private Vector2 _moveDirection = Vector2.zero;
     private PlayerInput _playerInput;
@@ -50,5 +59,21 @@ public class PlayerMovement : MonoBehaviour
     private void OnMovementCancelled(InputAction.CallbackContext value)
     {
         _moveDirection = Vector2.zero;
+    }
+
+    public void ChangeSpeed(float value, float duration)
+    {
+        StartCoroutine(SpeedBoost(value, duration));
+    }
+
+    private IEnumerator SpeedBoost(float value, float duration)
+    {
+        var waitForSeconds = new WaitForSeconds(duration);
+
+        Speed += value;
+
+        yield return waitForSeconds;
+
+        Speed -= value;
     }
 }
