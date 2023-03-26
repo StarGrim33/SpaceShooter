@@ -4,7 +4,5 @@ using UnityEngine;
 
 public abstract class PowerUpEffect : ScriptableObject
 {
-    private float _duration;
-
     public abstract void ApplyPowerUp(GameObject target);
 }

@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class ShieldController : MonoBehaviour
 {
-    [SerializeField] private GameObject _shieldVisual;
     [SerializeField] private float _maxShield;
     [SerializeField] private float _currentShield;
-    [SerializeField] private bool _isShieldActive = false;
+    [SerializeField] private bool _isShieldActive;
     [SerializeField] private SpriteRenderer _playerShieldSprite;
 
     public bool IsShieldActive => _isShieldActive;
@@ -32,11 +31,7 @@ public class ShieldController : MonoBehaviour
     private IEnumerator ShieldDurationCoroutine(float duration)
     {
         var waitForSeconds = new WaitForSeconds(duration);
-        _shieldVisual.SetActive(true);
-
         yield return waitForSeconds;
-
-        _shieldVisual.SetActive(false);
         _isShieldActive = false;
         _playerShieldSprite.enabled = false;
     }
@@ -50,7 +45,6 @@ public class ShieldController : MonoBehaviour
             if (_currentShield <= 0f)
             {
                 _currentShield = 0f;
-                _shieldVisual.SetActive(false);
                 _isShieldActive = false;
                 _playerShieldSprite.enabled = false;
             }
