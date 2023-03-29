@@ -1,34 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
-[RequireComponent(typeof(PoolObject))]
-public class Rocket : MonoBehaviour
+public class HunterBullet : MonoBehaviour
 {
     [SerializeField] private int _damage;
     [SerializeField] private float _speed;
     [SerializeField] private float _lifeTime;
-    private Player _player;
 
-    private Vector2 _target;
+    public float Speed => _speed;
+
     private PoolObject _poolObject;
-    private float _range = 10f;
+    private Vector2 _moveDirection;
 
-    private void Start()
+    private void Awake()
     {
-        _player = FindObjectOfType<Player>();
         _poolObject = GetComponent<PoolObject>();
-        _target = new Vector2(_player.transform.position.x - _range, _player.transform.position.y);
+    }
+
+    private void Update()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, _moveDirection, _speed * Time.deltaTime);
     }
 
     private void OnEnable()
     {
         StartCoroutine(Destroy());
-    }
-
-    private void Update()
-    {
-        transform.position = Vector2.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,5 +48,10 @@ public class Rocket : MonoBehaviour
         var waitForSeconds = new WaitForSeconds(_lifeTime);
         yield return waitForSeconds;
         _poolObject.ReturnToPool();
+    }
+
+    public void SetMoveDirection(Vector2 direction)
+    {
+        _moveDirection = direction;
     }
 }

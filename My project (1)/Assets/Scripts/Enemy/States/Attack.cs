@@ -6,6 +6,7 @@ public class Attack : MonoBehaviour
 {
     [SerializeField] private Transform _shootPoint;
     [SerializeField] private float _delay;
+    [SerializeField] private GameObject _enemyBullet;
     private float _lastAttackTime;
 
     private void Update()
@@ -21,7 +22,7 @@ public class Attack : MonoBehaviour
 
     private void Shoot()
     {
-        GameObject instance = Pool.SharedInstance.GetEnemyBullets();
+        GameObject instance = Pool.SharedInstance.GetObject(_enemyBullet);
         instance.transform.position = _shootPoint.position;
         instance.SetActive(true);
     }

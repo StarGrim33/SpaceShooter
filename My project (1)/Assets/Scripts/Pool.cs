@@ -8,17 +8,22 @@ public class Pool : MonoBehaviour
     [SerializeField] private int _poolCount;
     [SerializeField] private GameObject _playerBullet;
     [SerializeField] private GameObject _playerBulletsContainer;
-    [SerializeField] private List<GameObject> _playerBullets;
 
-    [SerializeField] private List<GameObject> _enemyBullets;
     [SerializeField] private GameObject _enemyBullet;
     [SerializeField] private GameObject _enemyBulletsContainer;
 
     [SerializeField] private int _rocketCount;
-    [SerializeField] private List<GameObject> _enemyRockets;
     [SerializeField] private GameObject _enemyRocket;
     [SerializeField] private GameObject _enemyRocketsContainer;
 
+    [SerializeField] private int _hunterBulletsCount;
+    [SerializeField] private GameObject _hunterBullet;
+    [SerializeField] private GameObject _hunterBulletContainer;
+
+    private List<GameObject> _playerBullets = new List<GameObject>();
+    private List<GameObject> _enemyBullets = new List<GameObject>();
+    private List<GameObject> _enemyRockets = new List<GameObject>();
+    private List<GameObject> _hunterBullets = new List<GameObject>();
 
     private void Awake()
     {
@@ -27,62 +32,51 @@ public class Pool : MonoBehaviour
 
     private void Start()
     {
-        _playerBullets = new List<GameObject>();
+        CreateObjects(_playerBullet, _playerBulletsContainer.transform, _poolCount, _playerBullets);
+        CreateObjects(_enemyBullet, _enemyBulletsContainer.transform, _poolCount, _enemyBullets);
+        CreateObjects(_enemyRocket, _enemyRocketsContainer.transform, _rocketCount, _enemyRockets);
+        CreateObjects(_hunterBullet, _hunterBulletContainer.transform, _hunterBulletsCount, _hunterBullets);
+    }
 
-        for (int i = 0; i < _poolCount; i++)
+    private void CreateObjects(GameObject prefab, Transform parent, int count, List<GameObject> list)
+    {
+        for (int i = 0; i < count; i++)
         {
-            var playerBullets = Instantiate(_playerBullet, _playerBulletsContainer.transform);
-            playerBullets.SetActive(false);
-            _playerBullets.Add(playerBullets);
-        }
-
-        _enemyBullets = new List<GameObject>();
-
-        for (int i = 0; i < _poolCount; i++)
-        {
-            var enemyBullets = Instantiate(_enemyBullet, _enemyBulletsContainer.transform);
-            enemyBullets.SetActive(false);
-            _enemyBullets.Add(enemyBullets);
-        }
-
-        _enemyRockets = new List<GameObject>();
-
-        for(int i = 0; i < _rocketCount; i++)
-        {
-            var enemyRockets = Instantiate(_enemyRocket, _enemyRocketsContainer.transform); 
-            enemyRockets.SetActive(false);
-            _enemyRockets.Add(enemyRockets);
+            var obj = Instantiate(prefab, parent);
+            obj.SetActive(false);
+            list.Add(obj);
         }
     }
 
-    public GameObject GetPlayerBullets()
+    public GameObject GetObject(GameObject prefab)
     {
-        for (int i = 0; i < _poolCount; i++)
+        List<GameObject> list = null;
+
+        if (prefab == _playerBullet)
         {
-            if (!_playerBullets[i].activeInHierarchy)
-                return _playerBullets[i];
+            list = _playerBullets;
+        }
+        else if (prefab == _enemyBullet)
+        {
+            list = _enemyBullets;
+        }
+        else if (prefab == _enemyRocket)
+        {
+            list = _enemyRockets;
+        }
+        else if(prefab == _hunterBullet)
+        {
+            list = _hunterBullets;
+        }
+        else
+        {
+            return null;
         }
 
-        return null;
-    }
-
-    public GameObject GetEnemyBullets()
-    {
-        for (int i = 0; i < _poolCount; i++)
+        for (int i = 0; i < list.Count; i++)
         {
-            if (!_enemyBullets[i].activeInHierarchy)
-                return _enemyBullets[i];
-        }
-
-        return null;
-    }
-
-    public GameObject GetEnemyRockets()
-    {
-        for (int i = 0; i < _rocketCount; i++)
-        {
-            if (!_enemyRockets[i].activeInHierarchy)
-                return _enemyRockets[i];
+            if (!list[i].activeInHierarchy)
+                return list[i];
         }
 
         return null;

@@ -73,6 +73,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _powerUpEffect: {fileID: 11400000, guid: e9ccd4f294960664b9cdf17837f38ec8, type: 2}
+  _pickupSound: {fileID: 8300000, guid: 9df4c2e414fd7d847978300d2a2b0213, type: 3}
+  _volume: 1
 --- !u!212 &6490132226598038314
 SpriteRenderer:
   m_ObjectHideFlags: 0

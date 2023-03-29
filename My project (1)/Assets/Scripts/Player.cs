@@ -12,9 +12,10 @@ public class Player : Unit
     [SerializeField] private List<Weapon> _weapons;
     [SerializeField] private AudioClip _playSound;
     [SerializeField] private ShieldController _shieldController;
+    [SerializeField] private AudioClip _pickupSound;
 
     public int Coins {get { return _coins; } private set { _coins = value; } }
-
+    public AudioSource Clip => _audioSource;
     public event UnityAction MoneyChanged;
 
     private Animator _animator;
@@ -22,15 +23,18 @@ public class Player : Unit
     private Weapon _currentWeapon;
     private float _shootTimer = 0.15f;
     private float _timer;
+    private AudioSource _audioSource;
 
     private void Awake()
     {
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.clip = _pickupSound;
         _currentWeapon = _weapons[0];
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
         _timer = _shootTimer;
     }
-
+    
     private void Update()
     {
         _timer -= Time.deltaTime;

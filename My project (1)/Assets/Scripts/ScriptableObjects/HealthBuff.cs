@@ -8,7 +8,7 @@ public class HealthBuff : PowerUpEffect
 {
     [SerializeField] private int _amount;
     [SerializeField] private float _duration;
-
+ 
     public override void ApplyPowerUp(GameObject target)
     {
         target.GetComponent<Health>().Heal(_amount);

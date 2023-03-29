@@ -15,6 +15,7 @@ public class Enemy : Unit
     private bool _canBeDestroyed = false;
 
     public event UnityAction<Enemy> Dying;
+    public int Health => _health;
 
     public int Reward => _reward;
 

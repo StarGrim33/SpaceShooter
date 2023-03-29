@@ -182,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shootPoint: {fileID: 2937215910078165514}
   _delay: 5
+  _enemyBullet: {fileID: 4304274256210937237, guid: e0b4278a0236aca4393c160cde78c734, type: 3}
 --- !u!114 &3827578537825477213
 MonoBehaviour:
   m_ObjectHideFlags: 0
