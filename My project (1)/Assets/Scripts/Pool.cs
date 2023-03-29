@@ -14,6 +14,11 @@ public class Pool : MonoBehaviour
     [SerializeField] private GameObject _enemyBullet;
     [SerializeField] private GameObject _enemyBulletsContainer;
 
+    [SerializeField] private int _rocketCount;
+    [SerializeField] private List<GameObject> _enemyRockets;
+    [SerializeField] private GameObject _enemyRocket;
+    [SerializeField] private GameObject _enemyRocketsContainer;
+
 
     private void Awake()
     {
@@ -39,6 +44,15 @@ public class Pool : MonoBehaviour
             enemyBullets.SetActive(false);
             _enemyBullets.Add(enemyBullets);
         }
+
+        _enemyRockets = new List<GameObject>();
+
+        for(int i = 0; i < _rocketCount; i++)
+        {
+            var enemyRockets = Instantiate(_enemyRocket, _enemyRocketsContainer.transform); 
+            enemyRockets.SetActive(false);
+            _enemyRockets.Add(enemyRockets);
+        }
     }
 
     public GameObject GetPlayerBullets()
@@ -58,6 +72,17 @@ public class Pool : MonoBehaviour
         {
             if (!_enemyBullets[i].activeInHierarchy)
                 return _enemyBullets[i];
+        }
+
+        return null;
+    }
+
+    public GameObject GetEnemyRockets()
+    {
+        for (int i = 0; i < _rocketCount; i++)
+        {
+            if (!_enemyRockets[i].activeInHierarchy)
+                return _enemyRockets[i];
         }
 
         return null;

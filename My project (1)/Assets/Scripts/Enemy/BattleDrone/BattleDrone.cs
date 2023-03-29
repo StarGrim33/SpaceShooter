@@ -1,8 +1,10 @@
-using TMPro;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
-public class Enemy : Unit
+public class BattleDrone : Unit
 {
     [SerializeField] private int _health;
     [SerializeField] private int _reward;
@@ -14,7 +16,7 @@ public class Enemy : Unit
 
     private bool _canBeDestroyed = false;
 
-    public event UnityAction<Enemy> Dying;
+    public event UnityAction<BattleDrone> Dying;
 
     public int Reward => _reward;
 
@@ -38,7 +40,7 @@ public class Enemy : Unit
         if (transform.position.x < 17f)
             _canBeDestroyed = true;
     }
-    
+
     public override void TakeDamage(int damage)
     {
         if (_canBeDestroyed)
