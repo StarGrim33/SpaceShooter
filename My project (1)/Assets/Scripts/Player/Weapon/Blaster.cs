@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 
 public class Blaster : Weapon
 {
     [SerializeField] private Bullet _bullet;
+
 
     public override void Shoot(Transform shootPoint)
     {

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -19,20 +20,29 @@ public class Player : Unit
     private Animator _animator;
     private Health _health;
     private Weapon _currentWeapon;
+    private float _shootTimer = 0.15f;
+    private float _timer;
 
     private void Awake()
     {
         _currentWeapon = _weapons[0];
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
+        _timer = _shootTimer;
     }
 
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        _timer -= Time.deltaTime;
+
+        if (Input.GetButton("Fire1"))
         {
-            _currentWeapon.Shoot(_shootPosition);
-            AudioSource.PlayClipAtPoint(_playSound, transform.position, 0.2f);
+            if(_timer <= 0f)
+            {
+                _currentWeapon.Shoot(_shootPosition);
+                AudioSource.PlayClipAtPoint(_playSound, transform.position, 0.2f);
+                _timer = _shootTimer;
+            }
         }
     }
 
