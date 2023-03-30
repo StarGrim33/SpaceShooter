@@ -49,4 +49,9 @@ public class HunterBullet : MonoBehaviour
         yield return waitForSeconds;
         _poolObject.ReturnToPool();
     }
+
+    public void ReturnToPool()
+    {
+        _poolObject.ReturnToPool();
+    }
 }

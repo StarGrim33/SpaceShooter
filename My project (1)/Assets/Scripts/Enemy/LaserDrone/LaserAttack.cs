@@ -1,41 +1,57 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class LaserAttack : MonoBehaviour
 {
     [SerializeField] private float _distance = 100f;
-    [SerializeField] private LineRenderer _lineRenderer;
     [SerializeField] private Transform _shootPoint;
+    [SerializeField] private int _damage;
+    [SerializeField] private AudioSource _audioSource;
+    [SerializeField] private Collider2D _boxCollider;
+    [SerializeField] private SpriteRenderer _spriteRenderer;
 
-    private Transform _transformation;
-
-    private void Awake()
+    private void Start()
     {
-        _transformation = GetComponent<Transform>();
+        StartCoroutine(Shoot());
     }
 
-    private void Update()
+    private IEnumerator Shoot()
     {
-        ShootLaser();
-    }
-
-    private void ShootLaser()
-    {
-        if(Physics2D.Raycast(_transformation.position, transform.right))
+        while (true)
         {
-            RaycastHit2D _hit = Physics2D.Raycast(_transformation.position, transform.right);
-            Draw2DRay(_shootPoint.position, _hit.point);
-        }
-        else
-        {
-            Draw2DRay(_shootPoint.position, _shootPoint.transform.right *  _distance);
+            yield return new WaitForSeconds(2.0f);
+
+            _spriteRenderer.enabled = true;
+            _boxCollider.enabled = true;
+            _audioSource.Play();
+
+            if (Physics2D.Raycast(_shootPoint.position, _shootPoint.right, _distance))
+            {
+                RaycastHit2D _hit = Physics2D.Raycast(_shootPoint.position, _shootPoint.right, _distance);
+                Player player = _hit.collider.GetComponent<Player>();
+                if (player != null)
+                {
+                    player.TakeDamage(_damage);
+                }
+            }
+            else
+            {
+            }
+
+            yield return new WaitForSeconds(1.0f);
+
+            _spriteRenderer.enabled = false;
+            _boxCollider.enabled = false;
         }
     }
 
-    private void Draw2DRay(Vector2 startPosition, Vector2 endPosition)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        _lineRenderer.SetPosition(0, startPosition);
-        _lineRenderer.SetPosition(1, endPosition);
+        Player player = other.GetComponent<Player>();
+
+        if (player != null)
+        {
+            player.TakeDamage(_damage);
+        }
     }
 }

@@ -48,4 +48,9 @@ public class SimpleBullet : MonoBehaviour
         yield return waitForSeconds;
         _poolObject.ReturnToPool();
     }
+
+    public void ReturnToPool()
+    {
+        _poolObject.ReturnToPool();
+    }
 }
