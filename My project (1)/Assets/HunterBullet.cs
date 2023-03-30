@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class HunterBullet : MonoBehaviour
 {
@@ -12,16 +13,20 @@ public class HunterBullet : MonoBehaviour
     public float Speed => _speed;
 
     private PoolObject _poolObject;
-    private Vector2 _moveDirection;
+    private Vector2 _target;
+    private Player _player;
 
     private void Awake()
     {
+        _player = FindObjectOfType<Player>();
         _poolObject = GetComponent<PoolObject>();
+        _target = new Vector2(_player.transform.position.x - 10f, _player.transform.position.y);
     }
 
     private void Update()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _moveDirection, _speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
+        transform.Rotate(0, 0, 10 * Time.deltaTime);
     }
 
     private void OnEnable()
@@ -36,11 +41,6 @@ public class HunterBullet : MonoBehaviour
             player.TakeDamage(_damage);
             _poolObject.ReturnToPool();
         }
-
-        if (collision.TryGetComponent<Bullet>(out Bullet bullet))
-        {
-            _poolObject.ReturnToPool();
-        }
     }
 
     private IEnumerator Destroy()
@@ -48,10 +48,5 @@ public class HunterBullet : MonoBehaviour
         var waitForSeconds = new WaitForSeconds(_lifeTime);
         yield return waitForSeconds;
         _poolObject.ReturnToPool();
-    }
-
-    public void SetMoveDirection(Vector2 direction)
-    {
-        _moveDirection = direction;
     }
 }
