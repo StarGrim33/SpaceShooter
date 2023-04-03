@@ -9,6 +9,10 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Player _player;
 
     public event UnityAction AllEnemySpawned;
+    public event UnityAction WaveChanged;
+    
+    public int WaveCount => _waves.Count;
+    public int CurrentWave => _currentWaveIndex;
 
     private float _elapsedTime = 0;
     private Wave _currentWave;
@@ -66,6 +70,7 @@ public class Spawner : MonoBehaviour
     public void NextWave()
     {
         SetWave(++_currentWaveIndex);
+        WaveChanged?.Invoke();
         _spawned = 0;
     }
 }
