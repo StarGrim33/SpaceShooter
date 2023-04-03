@@ -9,6 +9,10 @@ public class Pool : MonoBehaviour
     [SerializeField] private GameObject _playerBullet;
     [SerializeField] private GameObject _playerBulletsContainer;
 
+    [SerializeField] private int _count;
+    [SerializeField] private GameObject _playerMachineGunBullet;
+    [SerializeField] private GameObject _playerMachineGunContainer;
+
     [SerializeField] private GameObject _enemyBullet;
     [SerializeField] private GameObject _enemyBulletsContainer;
 
@@ -21,6 +25,7 @@ public class Pool : MonoBehaviour
     [SerializeField] private GameObject _hunterBulletContainer;
 
     private List<GameObject> _playerBullets = new List<GameObject>();
+    private List<GameObject> _machineGunBullets = new List<GameObject>();
     private List<GameObject> _enemyBullets = new List<GameObject>();
     private List<GameObject> _enemyRockets = new List<GameObject>();
     private List<GameObject> _hunterBullets = new List<GameObject>();
@@ -33,6 +38,7 @@ public class Pool : MonoBehaviour
     private void Start()
     {
         CreateObjects(_playerBullet, _playerBulletsContainer.transform, _poolCount, _playerBullets);
+        CreateObjects(_playerMachineGunBullet, _playerMachineGunContainer.transform, _count, _machineGunBullets);
         CreateObjects(_enemyBullet, _enemyBulletsContainer.transform, _poolCount, _enemyBullets);
         CreateObjects(_enemyRocket, _enemyRocketsContainer.transform, _rocketCount, _enemyRockets);
         CreateObjects(_hunterBullet, _hunterBulletContainer.transform, _hunterBulletsCount, _hunterBullets);
@@ -67,6 +73,10 @@ public class Pool : MonoBehaviour
         else if(prefab == _hunterBullet)
         {
             list = _hunterBullets;
+        }
+        else if(prefab == _playerMachineGunBullet)
+        {
+            list = _machineGunBullets;
         }
         else
         {

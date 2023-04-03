@@ -39,7 +39,7 @@ public class Enemy : Unit
         if (transform.position.x < 17f)
             _canBeDestroyed = true;
     }
-    
+
     public override void TakeDamage(int damage)
     {
         if (_canBeDestroyed)

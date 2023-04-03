@@ -40,6 +40,11 @@ public class SimpleBullet : MonoBehaviour
         {
             _poolObject.ReturnToPool();
         }
+
+        if(collision.TryGetComponent<MachineGunBullet>(out MachineGunBullet machineGunBullet))
+        {
+            _poolObject.ReturnToPool();
+        }
     }
 
     private IEnumerator Destroy()

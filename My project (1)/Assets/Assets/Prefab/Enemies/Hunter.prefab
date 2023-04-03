@@ -374,9 +374,6 @@ MonoBehaviour:
   _shootPoint: {fileID: 1169533851935732139}
   _delay: 2
   _bullets: {fileID: 2752997920387845336, guid: ed3d8badaf26eb54dbd7a98ab015d8cf, type: 3}
-  _bulletsAmount: 10
-  _startAngle: 90
-  _endAngle: 270
 --- !u!1 &4218435741410713028
 GameObject:
   m_ObjectHideFlags: 0
@@ -473,6 +470,7 @@ GameObject:
   - component: {fileID: 4218435741643730370}
   - component: {fileID: 4218435741643730372}
   - component: {fileID: 4218435741643730371}
+  - component: {fileID: 4565821770587538620}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -562,3 +560,15 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &4565821770587538620
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4218435741643730369}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

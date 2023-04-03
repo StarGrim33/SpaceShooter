@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,6 +9,7 @@ public class HealthBar : MonoBehaviour
 {
     [SerializeField] private Health _health;
     [SerializeField] private float _fadeTime = 50f;
+    [SerializeField] private TMP_Text _text;
 
     private Slider _slider;
     private Coroutine _coroutine;
@@ -17,22 +19,14 @@ public class HealthBar : MonoBehaviour
         _slider = GetComponent<Slider>();
         _health.Reduced += OnHealthReduced;
         _health.Incresead += OnHealthIncreased;
+        string text = "HP: " + _health.CurrentHealth.ToString();
+        _text.text = text;
     }
 
     private void OnDestroy()
     {
         _health.Reduced -= OnHealthReduced;
         _health.Incresead -= OnHealthIncreased;
-    }
-
-    public void OnHealthReduced(int currentHealth)
-    {
-        FadeSliderValueChange(currentHealth);
-    }
-
-    public void OnHealthIncreased(int currentHealth)
-    {
-        FadeSliderValueChange(currentHealth);
     }
 
     private void FadeSliderValueChange(float healthTarget)
@@ -52,5 +46,23 @@ public class HealthBar : MonoBehaviour
             _slider.value = Mathf.MoveTowards(_slider.value, target, _fadeTime * Time.deltaTime);
             yield return null;
         }
+    }
+
+    public void OnHealthReduced(int currentHealth)
+    {
+        HealthDisplay();
+        FadeSliderValueChange(currentHealth);
+    }
+
+    public void OnHealthIncreased(int currentHealth)
+    {
+        HealthDisplay();
+        FadeSliderValueChange(currentHealth);
+    }
+
+    public void HealthDisplay()
+    {
+        string text = "HP: " + _health.CurrentHealth.ToString();
+        _text.text = text;
     }
 }

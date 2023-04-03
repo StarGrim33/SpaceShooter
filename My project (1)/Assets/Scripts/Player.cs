@@ -15,15 +15,18 @@ public class Player : Unit
     [SerializeField] private AudioClip _pickupSound;
 
     public int Coins {get { return _coins; } private set { _coins = value; } }
+
     public AudioSource Clip => _audioSource;
     public event UnityAction MoneyChanged;
 
     private Animator _animator;
     private Health _health;
     private Weapon _currentWeapon;
-    private float _shootTimer = 0.15f;
-    private float _timer;
     private AudioSource _audioSource;
+    private float _shootTimer = 0.15f;
+
+    private float _timer;
+    private int _currentWeaponNumber = 0;
 
     private void Awake()
     {
@@ -33,6 +36,7 @@ public class Player : Unit
         _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
         _timer = _shootTimer;
+        ChangeWeapon(_weapons[_currentWeaponNumber]);
     }
     
     private void Update()
@@ -70,5 +74,30 @@ public class Player : Unit
     public void Heal(int heal)
     {
         _health.Heal(heal);
+    }
+
+    public void BuyWeapon(Weapon weapon)
+    {
+        Coins -= weapon.Price;
+        _weapons.Add(weapon);
+    }
+
+    private void ChangeWeapon(Weapon weapon)
+    {
+        _currentWeapon = weapon;
+    }
+
+    public void NextWeapon()
+    {
+        if(_currentWeaponNumber == _weapons.Count - 1) 
+        { 
+            _currentWeaponNumber = 0;
+        }
+        else
+        {
+            _currentWeaponNumber++;
+        }
+
+        ChangeWeapon(_weapons[_currentWeaponNumber]);
     }
 }
