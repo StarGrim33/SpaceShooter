@@ -276,7 +276,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7953134576252864941}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
@@ -296,6 +296,7 @@ GameObject:
   - component: {fileID: 8626755887071501884}
   - component: {fileID: 3872837448985948541}
   - component: {fileID: 3965951088515089059}
+  - component: {fileID: 4124402117131668968}
   m_Layer: 0
   m_Name: Patrol
   m_TagString: Untagged
@@ -487,3 +488,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!225 &4124402117131668968
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8271332347671186807}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

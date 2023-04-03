@@ -696,6 +696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7113f407497e8d041a90e4c73157598c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _musicAudioSource: {fileID: 0}
 --- !u!225 &319376369
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1470,7 +1471,7 @@ MonoBehaviour:
   - {fileID: 313153041}
   - {fileID: 495694768}
   _waves:
-  - _enemyPrefab: {fileID: 2822473606530159504, guid: d7906075ee4f5ed4ba0eabe9abaafaaf, type: 3}
+  - _enemyPrefab: {fileID: 8271332347671186807, guid: d45e902a025412540ad3926777aa2aa7, type: 3}
     _delay: 1
     _amount: 1
   - _enemyPrefab: {fileID: 5072270444568649117, guid: 1c18002a37b10de4fa7b69c9f11835fa, type: 3}
@@ -1574,6 +1575,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7113f407497e8d041a90e4c73157598c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _musicAudioSource: {fileID: 519420033}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -2652,7 +2654,7 @@ MonoBehaviour:
   - {fileID: 6782009726138127899, guid: db16df244c68be9468d0f6c3639e8bd0, type: 3}
   _playSound: {fileID: 8300000, guid: 3eab29a6bef99284e82d2bd45a245e78, type: 3}
   _shieldController: {fileID: 898663340}
-  _pickupSound: {fileID: 8300000, guid: 3eab29a6bef99284e82d2bd45a245e78, type: 3}
+  _pickupSound: {fileID: 8300000, guid: 4fb135d3c45ee7343ba34122f8adc35f, type: 3}
 --- !u!114 &898663335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4671,6 +4673,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7113f407497e8d041a90e4c73157598c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _musicAudioSource: {fileID: 0}
 --- !u!1 &1407270146
 GameObject:
   m_ObjectHideFlags: 0
