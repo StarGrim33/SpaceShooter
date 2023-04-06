@@ -15,7 +15,7 @@ public class Player : Unit
     [SerializeField] private AudioClip _pickupSound;
 
     public int Coins {get { return _coins; } private set { _coins = value; } }
-
+    
     public AudioSource Clip => _audioSource;
     public event UnityAction MoneyChanged;
 
@@ -52,6 +52,11 @@ public class Player : Unit
         }
     }
 
+    private void ChangeWeapon(Weapon weapon)
+    {
+        _currentWeapon = weapon;
+    }
+
     public override void TakeDamage(int damage)
     {
         if(_shieldController.IsShieldActive)
@@ -69,6 +74,12 @@ public class Player : Unit
         MoneyChanged.Invoke();
     }
 
+    public void RemoveCoins(int value)
+    {
+        Coins -= value;
+        MoneyChanged.Invoke();
+    }
+
     public void Heal(int heal)
     {
         _health.Heal(heal);
@@ -78,11 +89,6 @@ public class Player : Unit
     {
         Coins -= weapon.Price;
         _weapons.Add(weapon);
-    }
-
-    private void ChangeWeapon(Weapon weapon)
-    {
-        _currentWeapon = weapon;
     }
 
     public void NextWeapon()

@@ -8,6 +8,8 @@ public class MachineGunBullet : MonoBehaviour
     [SerializeField] private float _speed;
     [SerializeField] private float _lifeTime;
 
+    public int Damage => _damage;
+
     private PoolObject _poolObject;
 
     private void Start()
@@ -44,5 +46,10 @@ public class MachineGunBullet : MonoBehaviour
         var waitForSeconds = new WaitForSeconds(_lifeTime);
         yield return waitForSeconds;
         _poolObject.ReturnToPool();
+    }
+
+    public void UpgradeDamage(int value)
+    {
+        _damage += value;
     }
 }

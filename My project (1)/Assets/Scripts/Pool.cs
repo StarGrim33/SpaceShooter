@@ -91,4 +91,15 @@ public class Pool : MonoBehaviour
 
         return null;
     }
+
+    public void UpdateBullets(GameObject prefab, int value)
+    {
+        if (prefab == _playerBullet)
+        {
+            for(int i = 0; i < _playerBullets.Count; i++)
+            {
+                _playerBullets[i].GetComponent<Bullet>().UpgradeDamage(value);
+            }
+        }
+    }
 }

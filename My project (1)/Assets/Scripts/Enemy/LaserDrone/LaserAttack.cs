@@ -19,7 +19,7 @@ public class LaserAttack : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(2.0f);
+            yield return new WaitForSeconds(3.0f);
 
             _spriteRenderer.enabled = true;
             _boxCollider.enabled = true;
@@ -34,11 +34,8 @@ public class LaserAttack : MonoBehaviour
                     player.TakeDamage(_damage);
                 }
             }
-            else
-            {
-            }
 
-            yield return new WaitForSeconds(1.0f);
+            yield return new WaitForSeconds(2.0f);
 
             _spriteRenderer.enabled = false;
             _boxCollider.enabled = false;
@@ -47,9 +44,7 @@ public class LaserAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Player player = other.GetComponent<Player>();
-
-        if (player != null)
+        if(other.TryGetComponent<Player>(out Player player))
         {
             player.TakeDamage(_damage);
         }

@@ -19,7 +19,7 @@ public class HealthBar : MonoBehaviour
         _slider = GetComponent<Slider>();
         _health.Reduced += OnHealthReduced;
         _health.Incresead += OnHealthIncreased;
-        string text = "HP: " + _health.CurrentHealth.ToString();
+        string text = "HP: " + _health.CurrentHealth.ToString() + "/" + _health.MaxHealth;
         _text.text = text;
     }
 
@@ -62,7 +62,7 @@ public class HealthBar : MonoBehaviour
 
     public void HealthDisplay()
     {
-        string text = "HP: " + _health.CurrentHealth.ToString();
+        string text = "HP: " + _health.CurrentHealth.ToString() + "/" + _health.MaxHealth;
         _text.text = text;
     }
 }

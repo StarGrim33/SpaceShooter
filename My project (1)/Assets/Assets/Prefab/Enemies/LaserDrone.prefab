@@ -107,7 +107,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.030454993, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -118,7 +118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.43, y: 1.22}
+  m_Size: {x: 2.36909, y: 1.22}
   m_EdgeRadius: 0
 --- !u!50 &2822473606530159501
 Rigidbody2D:
@@ -197,7 +197,7 @@ MonoBehaviour:
   _shootPoint: {fileID: 1428375193846022483}
   _damage: 25
   _audioSource: {fileID: 2822473606530159496}
-  _boxCollider: {fileID: 4575565560070421836}
+  _boxCollider: {fileID: 820835763278664649}
   _spriteRenderer: {fileID: 7179172784310149671}
 --- !u!82 &2822473606530159496
 AudioSource:
@@ -210,7 +210,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a73e3eeb1d0732546952d9752dc25a69, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -554,7 +554,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3863140080702769778}
   - component: {fileID: 7179172784310149671}
-  - component: {fileID: 4575565560070421836}
+  - component: {fileID: 948092249623270858}
+  - component: {fileID: 820835763278664649}
+  - component: {fileID: 3058355269364031522}
   m_Layer: 0
   m_Name: Laser
   m_TagString: Untagged
@@ -629,7 +631,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &4575565560070421836
+--- !u!50 &948092249623270858
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6089783320418611506}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &820835763278664649
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -655,6 +678,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.21, y: 0.89}
   m_EdgeRadius: 0
+--- !u!114 &3058355269364031522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6089783320418611506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 823edd2bbb6622b48a7c287869dec139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _distance: 100
+  _shootPoint: {fileID: 1428375193846022483}
+  _damage: 25
+  _audioSource: {fileID: 2822473606530159496}
+  _boxCollider: {fileID: 820835763278664649}
+  _spriteRenderer: {fileID: 7179172784310149671}
 --- !u!1 &6260412083419647454
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,8 @@ public class Shop : MonoBehaviour
     [SerializeField] private List<Weapon> _weapons;
     [SerializeField] private Player _player;
     [SerializeField] private GameObject _itemContainer;
-    [SerializeField] private ItemView _template;
+    [SerializeField] private WeaponView _template;
+    [SerializeField] private HealthUpgrade _healthUpgrade;
 
     private void Start()
     {
@@ -24,12 +25,12 @@ public class Shop : MonoBehaviour
         view.Render(weapon);
     }
 
-    private void OnSellButtonClick(Weapon weapon, ItemView view)
+    private void OnSellButtonClick(Weapon weapon, WeaponView view)
     {
         TrySellWeapon(weapon, view);
     }
 
-    private void TrySellWeapon(Weapon weapon, ItemView view)
+    private void TrySellWeapon(Weapon weapon, WeaponView view)
     {
         if(weapon.Price <= _player.Coins)
         {

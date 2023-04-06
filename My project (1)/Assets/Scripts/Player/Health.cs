@@ -11,6 +11,8 @@ public class Health : MonoBehaviour
     public event UnityAction<int> Reduced;
     public event UnityAction<int> Incresead;
 
+    public int MaxHealth => _maxHealth;
+
     public int CurrentHealth
     {
         get { return _health; }
@@ -36,5 +38,11 @@ public class Health : MonoBehaviour
         CurrentHealth -= damage;
         Debug.Log(CurrentHealth);
         Reduced?.Invoke(CurrentHealth);
+    }
+
+    public void UpgradeHealth(int value)
+    {
+        _maxHealth += value;
+        Incresead?.Invoke(CurrentHealth);
     }
 }

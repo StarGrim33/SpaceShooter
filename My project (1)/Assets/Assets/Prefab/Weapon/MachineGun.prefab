@@ -98,8 +98,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _label: "\u041F\u0443\u043B\u0435\u043C\u0435\u0442"
-  _price: 50
+  _price: 2500
   _sprite: {fileID: -532454700, guid: 27036c87f5961d443bb257487a5892b5, type: 3}
-  _isBuyed: 1
-  _audioClip: {fileID: 8300000, guid: bfcf128c638fadf46b7b7fba9a06eb74, type: 3}
+  _isBuyed: 0
   _playerBullet: {fileID: 6183757303428193945, guid: 7dac936ba27efab4c960045df9d7c6e1, type: 3}

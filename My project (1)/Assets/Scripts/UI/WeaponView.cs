@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class ItemView : MonoBehaviour
+public class WeaponView : MonoBehaviour
 {
     [SerializeField] private TMP_Text _label;
     [SerializeField] private TMP_Text _price;
@@ -14,7 +14,7 @@ public class ItemView : MonoBehaviour
 
     private Weapon _weapon;
 
-    public event UnityAction<Weapon, ItemView> SellButtonClick;
+    public event UnityAction<Weapon, WeaponView> SellButtonClick;
 
     private void OnEnable()
     {

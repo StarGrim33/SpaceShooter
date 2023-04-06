@@ -11,6 +11,7 @@ public class Enemy : Unit
     [SerializeField] private TMP_Text _text;
     [SerializeField] private Canvas _canvas;
     [SerializeField] private Vector3 _offset;
+    private int _collisionDamage = 40;
 
     private bool _canBeDestroyed = false;
 
@@ -70,5 +71,14 @@ public class Enemy : Unit
         Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + _offset);
         _text.transform.position = screenPos;
         _text.text = EnemyHealth.ToString();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.TryGetComponent<Player>(out Player player))
+        {
+            player.TakeDamage(_collisionDamage);
+            Die();
+        }
     }
 }

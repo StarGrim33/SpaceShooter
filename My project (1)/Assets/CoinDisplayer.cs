@@ -9,14 +9,9 @@ public class CoinDisplayer : MonoBehaviour
     [SerializeField] private TMP_Text _money;
     [SerializeField] private Player _player;
 
-    private void OnEnable()
+    private void Awake()
     {
         _player.MoneyChanged += OnCoinChanged;
-    }
-
-    private void OnDisable()
-    {
-        _player.MoneyChanged -= OnCoinChanged;
     }
 
     private void OnCoinChanged()
