@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(Animator), typeof(Health))]
+[RequireComponent(typeof(Health))]
 public class Player : Unit
 {
     [SerializeField] private int _coins;
@@ -19,7 +19,6 @@ public class Player : Unit
     public AudioSource Clip => _audioSource;
     public event UnityAction MoneyChanged;
 
-    private Animator _animator;
     private Health _health;
     private Weapon _currentWeapon;
     private AudioSource _audioSource;
@@ -33,7 +32,6 @@ public class Player : Unit
         _audioSource = GetComponent<AudioSource>();
         _audioSource.clip = _pickupSound;
         _currentWeapon = _weapons[0];
-        _animator = GetComponent<Animator>();
         _health = GetComponent<Health>();
         _timer = _shootTimer;
         ChangeWeapon(_weapons[_currentWeaponNumber]);
