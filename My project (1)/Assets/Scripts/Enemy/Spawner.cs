@@ -12,13 +12,17 @@ public class Spawner : MonoBehaviour
     public event UnityAction WaveChanged;
 
     public int WaveCount => _waves.Count;
+
     public int CurrentWave => _currentWaveIndex;
+
+    public int WavesRemaining => _lastWaveNumber - CurrentWave;
 
     private float _elapsedTime = 0;
     private Wave _currentWave;
     private int _currentWaveIndex = 0;
     private float _timeAfterLastSpawn;
     private int _spawned;
+    private int _lastWaveNumber = 50;
 
     private void Start()
     {

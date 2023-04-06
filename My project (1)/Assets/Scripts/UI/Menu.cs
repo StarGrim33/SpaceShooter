@@ -17,8 +17,6 @@ public class Menu : MonoBehaviour
     {
         panel.SetActive(false);
         Time.timeScale = 1f;
-
-        if (_musicAudioSource != null)
-            _musicAudioSource.Pause();
+        _musicAudioSource.Pause();
     }
 }

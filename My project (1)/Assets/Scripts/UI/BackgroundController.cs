@@ -22,27 +22,31 @@ public class BackgroundController : MonoBehaviour
 
     private IEnumerator ChangeBackgroundCoroutine()
     {
-        yield return new WaitForSeconds(_delay);
-
-        float duration = 1f; 
-        float elapsedTime = 0f;
-
-        while (elapsedTime < duration)
+        while(_newBackground.Length != 0)
         {
-            _background.color = Color.Lerp(_defaultColor, Color.clear, elapsedTime / duration);
-            elapsedTime += Time.deltaTime;
-            yield return null;
-        }
+            yield return new WaitForSeconds(_delay);
 
-        int randomTextureIndex = UnityEngine.Random.Range(0, _newBackground.Length);
-        _background.texture = _newBackground[randomTextureIndex];
+            float duration = 1f;
+            float elapsedTime = 0f;
 
-        elapsedTime = 0f;
-        while (elapsedTime < duration)
-        {
-            _background.color = Color.Lerp(Color.clear, _defaultColor, elapsedTime / duration);
-            elapsedTime += Time.deltaTime;
-            yield return null;
+            while (elapsedTime < duration)
+            {
+                _background.color = Color.Lerp(_defaultColor, Color.clear, elapsedTime / duration);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+
+            int randomTextureIndex = UnityEngine.Random.Range(0, _newBackground.Length);
+            _background.texture = _newBackground[randomTextureIndex];
+
+            elapsedTime = 0f;
+
+            while (elapsedTime < duration)
+            {
+                _background.color = Color.Lerp(Color.clear, _defaultColor, elapsedTime / duration);
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
         }
     }
 }

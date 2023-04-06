@@ -11,7 +11,8 @@ public class WaveDisplayer : MonoBehaviour
 
     private void Start()
     {
-        _text.text = _spawner.CurrentWave.ToString();
+        string text = "Осталось волн: " + _spawner.WavesRemaining.ToString();
+        _text.text = text;
     }
 
     private void OnEnable()
@@ -32,6 +33,7 @@ public class WaveDisplayer : MonoBehaviour
 
     public void DisplayWaveNumber()
     {
-        _text.text = _spawner.CurrentWave.ToString();
+        string text = "Осталось волн: " + _spawner.WavesRemaining.ToString();
+        _text.text = text;
     }
 }
