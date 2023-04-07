@@ -57,7 +57,6 @@ public class Spawner : MonoBehaviour
 
     private void SetWave(int index)
     {
-        //int randomWave = Random.Range(0, _waves.Count);
         _currentWave = _waves[index];
     }
 
@@ -75,7 +74,7 @@ public class Spawner : MonoBehaviour
 
     public void NextWave()
     {
-        if (_currentWaveIndex == 2)
+        if (_currentWaveIndex == 49)
         {
             ReachedLastWave?.Invoke();
         }

@@ -44,6 +44,7 @@ public class Health : MonoBehaviour
     public void UpgradeHealth(int value)
     {
         _maxHealth += value;
+        _health = _maxHealth;
         Incresead?.Invoke(CurrentHealth);
     }
 }

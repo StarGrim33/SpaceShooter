@@ -12,6 +12,7 @@ public class CoinDisplayer : MonoBehaviour
     private void Awake()
     {
         _player.MoneyChanged += OnCoinChanged;
+        DisplayCoins();
     }
 
     private void OnCoinChanged()

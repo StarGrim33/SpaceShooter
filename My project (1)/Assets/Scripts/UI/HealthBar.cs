@@ -57,6 +57,7 @@ public class HealthBar : MonoBehaviour
     public void OnHealthIncreased(int currentHealth)
     {
         HealthDisplay();
+        _slider.maxValue = _health.MaxHealth;
         FadeSliderValueChange(currentHealth);
     }
 
