@@ -1,31 +1,34 @@
-using System;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
-using UnityEngine.SocialPlatforms;
 
-public class SimpleBullet : MonoBehaviour
+public class LaserBullet : MonoBehaviour
 {
     [SerializeField] private int _damage;
     [SerializeField] private float _speed;
     [SerializeField] private float _lifeTime;
 
-    public float Speed => _speed;
-    private Vector2 _target;
-    private float _range = 10f;
     private Player _player;
 
+    private Vector2 _target;
     private PoolObject _poolObject;
-
+    private float _range = 10f;
+   
     private void Awake()
     {
         _player = FindObjectOfType<Player>();
-        _target = new Vector2(_player.transform.position.x - _range, _player.transform.position.y);
         _poolObject = GetComponent<PoolObject>();
+    }
+
+    private void Start()
+    {
+        _target = new Vector2(_player.transform.position.x - _range, _player.transform.position.y);
     }
 
     private void Update()
     {
+        _target = new Vector2(_player.transform.position.x - _range, _player.transform.position.y);
+
         transform.position = Vector2.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
     }
 
@@ -39,16 +42,6 @@ public class SimpleBullet : MonoBehaviour
         if (collision.TryGetComponent<Player>(out Player player))
         {
             player.TakeDamage(_damage);
-            _poolObject.ReturnToPool();
-        }
-
-        if (collision.TryGetComponent<Bullet>(out Bullet bullet))
-        {
-            _poolObject.ReturnToPool();
-        }
-
-        if(collision.TryGetComponent<MachineGunBullet>(out MachineGunBullet machineGunBullet))
-        {
             _poolObject.ReturnToPool();
         }
     }

@@ -21,6 +21,7 @@ public class Health : MonoBehaviour
             _health = Mathf.Clamp(value, 0, _maxHealth);
         }
     }
+
     private void OnEnable()
     {
         _health = _maxHealth;

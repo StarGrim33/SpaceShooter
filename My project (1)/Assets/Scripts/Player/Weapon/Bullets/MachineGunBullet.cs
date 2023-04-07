@@ -35,6 +35,12 @@ public class MachineGunBullet : MonoBehaviour
             _poolObject.ReturnToPool();
         }
 
+        if (collision.TryGetComponent<Boss>(out Boss boss))
+        {
+            boss.TakeDamage(_damage);
+            _poolObject.ReturnToPool();
+        }
+
         if (collision.TryGetComponent<SimpleBullet>(out SimpleBullet simpleBullet))
         {
             _poolObject.ReturnToPool();

@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d483c87cb497642baa03f35770be72, type: 3}
   m_Name: MinorHealthBuff
   m_EditorClassIdentifier: 
-  _amount: 25
+  _amount: 50
+  _duration: 0

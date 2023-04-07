@@ -24,11 +24,27 @@ public class Pool : MonoBehaviour
     [SerializeField] private GameObject _hunterBullet;
     [SerializeField] private GameObject _hunterBulletContainer;
 
+    [SerializeField] private int _firstBossBulletCount;
+    [SerializeField] private GameObject _firstBossBullet;
+    [SerializeField] private GameObject _firstBossBulletContainer;
+
+    [SerializeField] private int _secondBossBulletCount;
+    [SerializeField] private GameObject _secondBossBullet;
+    [SerializeField] private GameObject _secondBossBulletContainer;
+
+    [SerializeField] private int _thirdBossBulletCount;
+    [SerializeField] private GameObject _thirdBossBullet;
+    [SerializeField] private GameObject _thirdBossBulletContainer;
+
     private List<GameObject> _playerBullets = new List<GameObject>();
     private List<GameObject> _machineGunBullets = new List<GameObject>();
     private List<GameObject> _enemyBullets = new List<GameObject>();
     private List<GameObject> _enemyRockets = new List<GameObject>();
     private List<GameObject> _hunterBullets = new List<GameObject>();
+
+    private List<GameObject> _firstBossBullets = new List<GameObject>();
+    private List<GameObject> _secondBossBullets = new List<GameObject>();
+    private List<GameObject> _thirdBossBullets = new List<GameObject>();
 
     private void Awake()
     {
@@ -42,6 +58,9 @@ public class Pool : MonoBehaviour
         CreateObjects(_enemyBullet, _enemyBulletsContainer.transform, _poolCount, _enemyBullets);
         CreateObjects(_enemyRocket, _enemyRocketsContainer.transform, _rocketCount, _enemyRockets);
         CreateObjects(_hunterBullet, _hunterBulletContainer.transform, _hunterBulletsCount, _hunterBullets);
+        CreateObjects(_firstBossBullet, _firstBossBulletContainer.transform, _firstBossBulletCount, _firstBossBullets);
+        CreateObjects(_secondBossBullet, _secondBossBulletContainer.transform, _secondBossBulletCount, _secondBossBullets);
+        CreateObjects(_thirdBossBullet, _thirdBossBulletContainer.transform, _thirdBossBulletCount, _thirdBossBullets);
     }
 
     private void CreateObjects(GameObject prefab, Transform parent, int count, List<GameObject> list)
@@ -77,6 +96,18 @@ public class Pool : MonoBehaviour
         else if(prefab == _playerMachineGunBullet)
         {
             list = _machineGunBullets;
+        }
+        else if(prefab == _firstBossBullet)
+        {
+            list = _firstBossBullets;
+        }
+        else if(prefab == _secondBossBullet)
+        {
+            list = _secondBossBullets;
+        }
+        else if(prefab == _thirdBossBullet)
+        {
+            list = _thirdBossBullets;
         }
         else
         {

@@ -10,6 +10,7 @@ public class Spawner : MonoBehaviour
 
     public event UnityAction AllEnemySpawned;
     public event UnityAction WaveChanged;
+    public event UnityAction ReachedLastWave;
 
     public int WaveCount => _waves.Count;
 
@@ -56,8 +57,8 @@ public class Spawner : MonoBehaviour
 
     private void SetWave(int index)
     {
-        int randomWave = Random.Range(0, _waves.Count);
-        _currentWave = _waves[randomWave];
+        //int randomWave = Random.Range(0, _waves.Count);
+        _currentWave = _waves[index];
     }
 
     private void InstantiateEnemy(int spawnPoint)
@@ -74,6 +75,11 @@ public class Spawner : MonoBehaviour
 
     public void NextWave()
     {
+        if (_currentWaveIndex == 2)
+        {
+            ReachedLastWave?.Invoke();
+        }
+
         SetWave(++_currentWaveIndex);
         WaveChanged?.Invoke();
         _spawned = 0;
@@ -86,13 +92,10 @@ public class Wave
     [SerializeField] private GameObject _enemyPrefab;
     [SerializeField] private float _delay;
     [SerializeField] private int _amount;
-    [SerializeField] private int _cost;
 
     public float Delay => _delay;
 
     public GameObject Template => _enemyPrefab;
 
     public float Amount => _amount;
-
-    public int Cost => _cost;
 }
