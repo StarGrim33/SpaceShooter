@@ -74,7 +74,7 @@ public class Spawner : MonoBehaviour
 
     public void NextWave()
     {
-        if (_currentWaveIndex == 49)
+        if (_currentWaveIndex == 2)
         {
             ReachedLastWave?.Invoke();
         }
