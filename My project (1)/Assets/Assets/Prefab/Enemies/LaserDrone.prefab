@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _distance: 100
   _shootPoint: {fileID: 1428375193846022483}
-  _damage: 25
+  _damage: 12
   _audioSource: {fileID: 2822473606530159496}
   _boxCollider: {fileID: 820835763278664649}
   _spriteRenderer: {fileID: 7179172784310149671}

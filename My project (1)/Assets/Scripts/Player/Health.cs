@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
 
     public event UnityAction<int> Reduced;
     public event UnityAction<int> Incresead;
+    public event UnityAction PlayerDead;
 
     public int MaxHealth => _maxHealth;
 
@@ -19,12 +20,21 @@ public class Health : MonoBehaviour
         private set
         {
             _health = Mathf.Clamp(value, 0, _maxHealth);
+
+            if (_health <= 0)
+                Die();
         }
     }
 
     private void OnEnable()
     {
         _health = _maxHealth;
+    }
+
+    private void Die()
+    {
+        PlayerDead?.Invoke();
+        Time.timeScale = 0f;
     }
 
     public void Heal(int heal)
