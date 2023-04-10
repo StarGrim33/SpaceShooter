@@ -1,18 +1,21 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Boss : MonoBehaviour
 {
     [SerializeField] private int _totalHealth = 3000;
     [SerializeField] private int _healthPerPhase = 1000;
     [SerializeField] private float _phaseChangeDelay = 3f;
-    [SerializeField] private GameObject[] _attackPrefabs; // массив префабов атак для каждой фазы
+    [SerializeField] private GameObject[] _attackPrefabs; 
     [SerializeField] private Transform[] _attackSpawnPoint;
     [SerializeField] private GameObject[] _deathEffects;
     [SerializeField] private AudioSource _audioSource;
     [SerializeField] private AudioClip _stageChange;
     [SerializeField] private Transform _targetPosition;
     [SerializeField] private float _shotDelay = 1f;
+
+    public event UnityAction BossDead;
 
     private int _currentHealth;
     private float _lastShotTime = 0f;
@@ -142,6 +145,7 @@ public class Boss : MonoBehaviour
 
     private void Die()
     {
+        BossDead?.Invoke();
         var randomEffect = Random.Range(0, _deathEffects.Length);
         Instantiate(_deathEffects[randomEffect], transform.position, Quaternion.identity);
         Destroy(gameObject);

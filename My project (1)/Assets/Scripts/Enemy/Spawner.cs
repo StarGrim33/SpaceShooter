@@ -23,7 +23,7 @@ public class Spawner : MonoBehaviour
     private int _currentWaveIndex = 0;
     private float _timeAfterLastSpawn;
     private int _spawned;
-    private int _lastWaveNumber = 50;
+    private int _lastWaveNumber = 25;
 
     private void Start()
     {
