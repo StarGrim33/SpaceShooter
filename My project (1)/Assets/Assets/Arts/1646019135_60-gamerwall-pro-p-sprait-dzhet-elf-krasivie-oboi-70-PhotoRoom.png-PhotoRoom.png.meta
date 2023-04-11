@@ -1,0 +1,643 @@
+fileFormatVersion: 2
+guid: a2af92a8d9ad457438917a2790fdb1b7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 65
+    textureCompression: 1
+    compressionQuality: 30
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_0
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 380
+        width: 144
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c082629ffe84c248b1c3751eb336d42
+      internalID: -735776322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_1
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 419
+        width: 21
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7369f52f51759e44fa002d21d43bcf3d
+      internalID: -1821806440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 299
+        width: 157
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6578c1af05fea43b14f744620edee7
+      internalID: 957307336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_3
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 425
+        width: 51
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c4e3189f6888b4098583666844654f
+      internalID: -154159142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_4
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 306
+        width: 135
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca147598d52c4a947ad99a946914ce23
+      internalID: 201745236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_5
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 402
+        width: 68
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547ff3507b84c0a46bf32a2c343cd34f
+      internalID: 706414251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_6
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 362
+        width: 161
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a9cc31829609434398f4926b70ac5b2
+      internalID: -769457265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_7
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 442
+        width: 41
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a800142ca9d127142a2eb27523017092
+      internalID: -1819365280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 398
+        width: 28
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc59f0e483845b24b8f50bbdc19a08fd
+      internalID: 2043200156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_9
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 38
+        width: 237
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dee0c48d1a9be541a8da72da92f7e87
+      internalID: -2102800050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_10
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 117
+        width: 170
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377d1b28cad4b384d9d1a1eda538b37a
+      internalID: -861577120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_11
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 207
+        width: 51
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b7c8bb1f71b6943abe85f634913976
+      internalID: -1009761027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_12
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 76
+        width: 175
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5e253cd03442142b819dc60ef45db1
+      internalID: 761842067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 247
+        width: 52
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bac896811483545b2db1213ec0a849
+      internalID: 333312558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_14
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 166
+        width: 51
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c8c7333e13ffb419d60c40dc949628
+      internalID: -589955491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_15
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 116
+        width: 134
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f93745682e35b7a478e61b4342d0bff8
+      internalID: 414921302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_16
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 141
+        width: 68
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07902ec3cad2b0f47a2cea5d28e44453
+      internalID: -1432143795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_17
+      rect:
+        serializedVersion: 2
+        x: 946
+        y: 117
+        width: 119
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1302bfb9b2cce94b98eb50bd9c30763
+      internalID: -1409847303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_18
+      rect:
+        serializedVersion: 2
+        x: 1081
+        y: 160
+        width: 76
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544e34b916f70cf449f5ce774476f8a9
+      internalID: -137140832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_19
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 214
+        width: 31
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f9086483eca4cf40b4adaffe37d2716
+      internalID: -302676611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_20
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 199
+        width: 51
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45515b21015c1564984e394dcf288791
+      internalID: -111840491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_21
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 102
+        width: 184
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04c7d87dc04b0145bc49c094625814a
+      internalID: 1436241626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_7: -1819365280
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_15: 414921302
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_21: 1436241626
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_2: 957307336
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_17: -1409847303
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_1: -1821806440
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_0: -735776322
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_5: 706414251
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_6: -769457265
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_12: 761842067
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_3: -154159142
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_4: 201745236
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_14: -589955491
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_10: -861577120
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_13: 333312558
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_18: -137140832
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_19: -302676611
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_9: -2102800050
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_8: 2043200156
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_11: -1009761027
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_20: -111840491
+      1646019135_60-gamerwall-pro-p-sprait-dzhet-elf-krasivie-oboi-70-PhotoRoom.png-PhotoRoom_16: -1432143795
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

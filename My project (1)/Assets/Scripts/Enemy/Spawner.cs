@@ -18,12 +18,11 @@ public class Spawner : MonoBehaviour
 
     public int WavesRemaining => _lastWaveNumber - CurrentWave;
 
-    private float _elapsedTime = 0;
     private Wave _currentWave;
     private int _currentWaveIndex = 0;
     private float _timeAfterLastSpawn;
     private int _spawned;
-    private int _lastWaveNumber = 25;
+    private int _lastWaveNumber = 24;
 
     private void Start()
     {
@@ -74,7 +73,7 @@ public class Spawner : MonoBehaviour
 
     public void NextWave()
     {
-        if (_currentWaveIndex == 2)
+        if (_currentWaveIndex == 24)
         {
             ReachedLastWave?.Invoke();
         }

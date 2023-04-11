@@ -8,15 +8,13 @@ public class Menu : MonoBehaviour
     {
         panel.SetActive(true);
         Time.timeScale = 0f;
-
-        if (_musicAudioSource != null)
-            _musicAudioSource.Pause();
+        _musicAudioSource.Pause();
     }
 
     public void ClosePanel(GameObject panel)
     {
         panel.SetActive(false);
         Time.timeScale = 1f;
-        _musicAudioSource.Pause();
+        _musicAudioSource.Play();
     }
 }

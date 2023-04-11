@@ -78,8 +78,8 @@ public class Enemy : Unit
 
     public void DisplayHealth()
     {
-        Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + _offset);
-        _text.transform.position = screenPos;
+        //Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + _offset);
+        //_text.transform.position = screenPos;
         _text.text = EnemyHealth.ToString();
     }
 }

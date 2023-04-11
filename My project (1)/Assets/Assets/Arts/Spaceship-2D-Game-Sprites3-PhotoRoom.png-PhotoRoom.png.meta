@@ -1,0 +1,951 @@
+fileFormatVersion: 2
+guid: 27036c87f5961d443bb257487a5892b5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: 65
+    textureCompression: 1
+    compressionQuality: 30
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_0
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 797
+        width: 37
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3a5131aaab20be4592e973dc723aeb2
+      internalID: -847735928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 798
+        width: 13
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8b752578083f6343b845ec3dde79ece
+      internalID: 2091349196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_2
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 797
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70b3a00a7e88c2742b3f59f80345b73a
+      internalID: 1873657750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_3
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 796
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6003e094b31c53f409c2d7bb3068d78f
+      internalID: -1581051922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_4
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 795
+        width: 184
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 207417d4510f08a419e6fe5c73c0e5fe
+      internalID: -1624104803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_5
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 797
+        width: 76
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237df66e383aeb044a5805a31e216557
+      internalID: 1626357884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_6
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 796
+        width: 299
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee90ac61dfba22f429768a70195ac483
+      internalID: 1681504200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_7
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 797
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43da106c775fe694383c1226920b754c
+      internalID: 1413261069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_8
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 796
+        width: 159
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55c85c0ce0b81914c9394692dd602a2c
+      internalID: -1301481890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_9
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 796
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0298c5a381273084d819f895ed87a1d8
+      internalID: 154894991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_10
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 670
+        width: 128
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab078c79d10f11e4786a2f8c36c092c2
+      internalID: 439872567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_11
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 670
+        width: 153
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8dd88acc42a7642b98e3632792671f
+      internalID: 1568175322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_12
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 671
+        width: 137
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85ff379b8395c14ead22282869fe7bc
+      internalID: -838291526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_13
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 666
+        width: 178
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 411988158d8643e429e16234ca83429f
+      internalID: 94238986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_14
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 667
+        width: 288
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da48cfe58a9c5d4389b63fe991db8d2
+      internalID: -269895800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_15
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 552
+        width: 129
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bd10e5a53ab5d6489bda36cb14cfcfd
+      internalID: -1899787852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_16
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 553
+        width: 153
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92f2a04f5bd68c4db4e0e3bfa22f1ad
+      internalID: 1053048344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_17
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 563
+        width: 137
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1130c8e0487514f91c44d53900a718
+      internalID: -1649697064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_18
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 570
+        width: 179
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c223226532a224b82c4de1973cac1e
+      internalID: -534278632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_19
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 590
+        width: 287
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c698e8b447aed9549917349588d3ee34
+      internalID: 1947240757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_20
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 450
+        width: 120
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ceddce23f31bc49ba2e8c7b9fad422
+      internalID: 478621271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_21
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 449
+        width: 121
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b815ff485df82244a455a85309dad68
+      internalID: -493161641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_22
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 390
+        width: 168
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af6934dac5e97349a4d842db9a44116
+      internalID: -532454700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_23
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 451
+        width: 201
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fc602df29b651a49b1603d7eb1cec98
+      internalID: -1897139342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_24
+      rect:
+        serializedVersion: 2
+        x: 925
+        y: 389
+        width: 282
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d2a4662931b234e95b13acf66be57e
+      internalID: -1733804041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_25
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 393
+        width: 120
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53d11aaba2f52cf4fac9bc86038cab63
+      internalID: -112860544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_26
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 388
+        width: 122
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea653ef89479c44a99f6e947d22d06d
+      internalID: 408263716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_27
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 389
+        width: 201
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1150e0952bb474c9659b425da85b74
+      internalID: 1492559434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_28
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 225
+        width: 115
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c18cc82df8e59149a620aa7ddce7118
+      internalID: 2015393137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_29
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 229
+        width: 106
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9581d3f96d22c4c8f5188671ed1256
+      internalID: -369190997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_30
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 229
+        width: 110
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff9beb8e35475046b086795b79e81c4
+      internalID: -663994663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_31
+      rect:
+        serializedVersion: 2
+        x: 742
+        y: 229
+        width: 128
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2b46b26c72b394b9321ed4c4b1bf69
+      internalID: -383905348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_32
+      rect:
+        serializedVersion: 2
+        x: 1004
+        y: 232
+        width: 125
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 369aa20557b57034e9f55c131dd95fb2
+      internalID: -1245573611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_33
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 85
+        width: 223
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66719bae76fd9e84c94d36adfd90b011
+      internalID: -2139247414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_34
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 82
+        width: 222
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146b053634d22ae4997ebf610104dd12
+      internalID: -1484167309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_35
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 78
+        width: 282
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8504c70ec54654296f8845a89e85ab
+      internalID: -691300076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_26: 408263716
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_12: -838291526
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_30: -663994663
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_5: 1626357884
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_2: 1873657750
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_9: 154894991
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_7: 1413261069
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_13: 94238986
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_35: -691300076
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_14: -269895800
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_34: -1484167309
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_16: 1053048344
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_1: 2091349196
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_8: -1301481890
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_17: -1649697064
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_18: -534278632
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_24: -1733804041
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_4: -1624104803
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_29: -369190997
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_31: -383905348
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_22: -532454700
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_0: -847735928
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_6: 1681504200
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_21: -493161641
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_28: 2015393137
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_11: 1568175322
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_23: -1897139342
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_25: -112860544
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_10: 439872567
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_19: 1947240757
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_27: 1492559434
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_20: 478621271
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_3: -1581051922
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_33: -2139247414
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_15: -1899787852
+      Spaceship-2D-Game-Sprites3-PhotoRoom.png-PhotoRoom_32: -1245573611
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
