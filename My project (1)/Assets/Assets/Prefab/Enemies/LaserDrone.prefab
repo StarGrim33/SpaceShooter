@@ -254,7 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bee1abe1259084f91f2ea53d1018bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 70
+  _health: 170
+  _maxHealth: 170
   _reward: 125
   _dieEffects:
   - {fileID: 8460667080445658512, guid: a3e2c3406e02f2c4ba86cfb1604277bd, type: 3}

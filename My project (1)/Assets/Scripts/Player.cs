@@ -36,7 +36,13 @@ public class Player : Unit
         _timer = _shootTimer;
         ChangeWeapon(_weapons[_currentWeaponNumber]);
     }
-    
+
+    private void Start()
+    {
+        if(Time.timeScale == 0f)
+            Time.timeScale = 1f;
+    }
+
     private void Update()
     {
         _timer -= Time.deltaTime;

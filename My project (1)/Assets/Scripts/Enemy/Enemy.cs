@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class Enemy : Unit
 {
     [SerializeField] private int _health;
+    [SerializeField] private int _maxHealth;
     [SerializeField] private int _reward;
     [SerializeField] private GameObject[] _dieEffects;
     [SerializeField] private GameObject[] _buffs;
@@ -30,7 +31,7 @@ public class Enemy : Unit
             if (_health <= 0)
                 Die();
 
-            _health = Mathf.Clamp(value, 0, _health);
+            _health = Mathf.Clamp(value, 0, _maxHealth);
         }
     }
 
@@ -78,8 +79,11 @@ public class Enemy : Unit
 
     public void DisplayHealth()
     {
-        //Vector3 screenPos = Camera.main.WorldToScreenPoint(transform.position + _offset);
-        //_text.transform.position = screenPos;
         _text.text = EnemyHealth.ToString();
+    }
+
+    public void RestoreHealth()
+    {
+        _health = _maxHealth;
     }
 }

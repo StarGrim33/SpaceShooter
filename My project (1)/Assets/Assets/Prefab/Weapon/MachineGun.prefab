@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -532454700, guid: 27036c87f5961d443bb257487a5892b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 34177ce67ca31bd4a870b5e2fe266938, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,6 +99,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _label: "\u041F\u0443\u043B\u0435\u043C\u0435\u0442"
   _price: 2500
-  _sprite: {fileID: -532454700, guid: 27036c87f5961d443bb257487a5892b5, type: 3}
+  _sprite: {fileID: 21300000, guid: 34177ce67ca31bd4a870b5e2fe266938, type: 3}
   _isBuyed: 0
   _playerBullet: {fileID: 6183757303428193945, guid: 7dac936ba27efab4c960045df9d7c6e1, type: 3}

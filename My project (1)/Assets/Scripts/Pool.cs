@@ -49,13 +49,13 @@ public class Pool : MonoBehaviour
     private void Awake()
     {
         SharedInstance = this;
+        CreateObjects(_playerBullet, _playerBulletsContainer.transform, _poolCount, _playerBullets);
+        CreateObjects(_playerMachineGunBullet, _playerMachineGunContainer.transform, _count, _machineGunBullets);
+        CreateObjects(_enemyBullet, _enemyBulletsContainer.transform, _poolCount, _enemyBullets);
     }
 
     private void Start()
     {
-        CreateObjects(_playerBullet, _playerBulletsContainer.transform, _poolCount, _playerBullets);
-        CreateObjects(_playerMachineGunBullet, _playerMachineGunContainer.transform, _count, _machineGunBullets);
-        CreateObjects(_enemyBullet, _enemyBulletsContainer.transform, _poolCount, _enemyBullets);
         CreateObjects(_enemyRocket, _enemyRocketsContainer.transform, _rocketCount, _enemyRockets);
         CreateObjects(_hunterBullet, _hunterBulletContainer.transform, _hunterBulletsCount, _hunterBullets);
         CreateObjects(_firstBossBullet, _firstBossBulletContainer.transform, _firstBossBulletCount, _firstBossBullets);

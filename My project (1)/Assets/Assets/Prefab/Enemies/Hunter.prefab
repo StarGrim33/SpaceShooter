@@ -419,7 +419,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bee1abe1259084f91f2ea53d1018bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 300
+  _health: 450
+  _maxHealth: 450
   _reward: 150
   _dieEffects:
   - {fileID: 7226583673155636401, guid: a2ab56839e1c9504ea9d141e95d0b16b, type: 3}
@@ -445,7 +446,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e27afedb0999b84a99e473c0e741f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 1
+  _speed: 1.5
 --- !u!114 &4218435741028626679
 MonoBehaviour:
   m_ObjectHideFlags: 0
