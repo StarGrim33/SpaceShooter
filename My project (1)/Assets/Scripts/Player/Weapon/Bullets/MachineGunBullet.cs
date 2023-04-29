@@ -29,13 +29,13 @@ public class MachineGunBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent<Enemy>(out Enemy enemy))
+        if (collision.TryGetComponent<EnemyHealth>(out EnemyHealth enemy))
         {
             enemy.TakeDamage(_damage);
             _poolObject.ReturnToPool();
         }
 
-        if (collision.TryGetComponent<Boss>(out Boss boss))
+        if (collision.TryGetComponent <BossHealth>(out BossHealth boss))
         {
             boss.TakeDamage(_damage);
             _poolObject.ReturnToPool();

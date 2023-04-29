@@ -9,6 +9,11 @@ public class MachineGun : Weapon
     private int _criticalDamage = 15;
     private int _chance = 5;
 
+    private void ResetDamage()
+    {
+        _criticalDamage = 0;
+    }
+
     public override void Shoot(Transform shootPoint)
     {
         float randomNum = Random.Range(1, 101);
@@ -19,6 +24,7 @@ public class MachineGun : Weapon
             instance.GetComponent<MachineGunBullet>().UpgradeDamage(_criticalDamage);
             instance.transform.position = shootPoint.position;
             instance.SetActive(true);
+            ResetDamage();
         }
         else
         {

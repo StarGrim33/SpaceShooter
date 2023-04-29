@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu
 {
     [SerializeField] private GameObject _pauseMenu;
 

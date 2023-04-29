@@ -149,6 +149,11 @@ GameObject:
   - component: {fileID: 5072270444568649116}
   - component: {fileID: 5072270444568649114}
   - component: {fileID: 5072270444568649188}
+  - component: {fileID: 6518346298734906861}
+  - component: {fileID: 2257021608351985319}
+  - component: {fileID: 7813979731756779077}
+  - component: {fileID: 5283053528353250099}
+  - component: {fileID: -4861271218159061426}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -304,21 +309,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bee1abe1259084f91f2ea53d1018bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 100
-  _maxHealth: 100
-  _reward: 25
-  _dieEffects:
-  - {fileID: 2955623459812423943, guid: f5507a8c6a22c404ab324980c4e8a11b, type: 3}
-  - {fileID: 8443315704496310910, guid: 6ef35fa36e3a65043b2d800600204bdd, type: 3}
-  - {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
-  - {fileID: 7226583673155636401, guid: a2ab56839e1c9504ea9d141e95d0b16b, type: 3}
-  _buffs:
-  - {fileID: 6490132226598038315, guid: 61ae25a115a04de479dbaefd02cdced3, type: 3}
-  - {fileID: 4425002487226207237, guid: b19a791fa4d199c4994e8b99d6ee76dc, type: 3}
-  - {fileID: 7342564707843145588, guid: d29462966b6f0ff4eaa1e5cdd0f62091, type: 3}
-  _text: {fileID: 7851927136746393915}
-  _canvas: {fileID: 6767412665956912405}
-  _offset: {x: 1.72, y: 0, z: 0}
 --- !u!114 &5072270444568649116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,6 +352,82 @@ MonoBehaviour:
   _shootPoint: {fileID: 5072270443460861066}
   _delay: 2
   _enemyBullet: {fileID: 2139291380455049876, guid: 4ef72830c67c45345be622f539081f4a, type: 3}
+--- !u!114 &6518346298734906861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072270444568649117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a72fc8aa2e4b384ebd8531843f8fc90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _health: 100
+  _maxHealth: 100
+  _buffSpawner: {fileID: 7813979731756779077}
+  _deadEffectSpawner: {fileID: 5283053528353250099}
+--- !u!114 &2257021608351985319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072270444568649117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d5449b2da5f5244fb8c937a31c9ef0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 7851927136746393915}
+--- !u!114 &7813979731756779077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072270444568649117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b06d72e178000c41a376b8e1a7133f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _buffs:
+  - {fileID: 6490132226598038315, guid: 61ae25a115a04de479dbaefd02cdced3, type: 3}
+  - {fileID: 4425002487226207237, guid: b19a791fa4d199c4994e8b99d6ee76dc, type: 3}
+  - {fileID: 7342564707843145588, guid: d29462966b6f0ff4eaa1e5cdd0f62091, type: 3}
+--- !u!114 &5283053528353250099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072270444568649117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9c2a443c380d5840a8b42406c97180d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dieEffects:
+  - {fileID: 7226583673155636401, guid: a2ab56839e1c9504ea9d141e95d0b16b, type: 3}
+  - {fileID: 5024009746357069194, guid: ec3f674830402cc45bce805cf6493db7, type: 3}
+  - {fileID: 2955623459812423943, guid: f5507a8c6a22c404ab324980c4e8a11b, type: 3}
+  - {fileID: 8443315704496310910, guid: 6ef35fa36e3a65043b2d800600204bdd, type: 3}
+--- !u!114 &-4861271218159061426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072270444568649117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d024e1b21dd27b4ca53a67e73eefd5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _wallet: {fileID: 0}
+  _reward: 75
 --- !u!1 &5807852745302527901
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Shop : MonoBehaviour
 {
     [SerializeField] private List<Weapon> _weapons;
+    [SerializeField] private Wallet _wallet;
     [SerializeField] private Player _player;
     [SerializeField] private GameObject _itemContainer;
     [SerializeField] private WeaponView _template;
@@ -32,7 +33,7 @@ public class Shop : MonoBehaviour
 
     private void TrySellWeapon(Weapon weapon, WeaponView view)
     {
-        if(weapon.Price <= _player.Coins)
+        if(weapon.Price <= _wallet.Coins)
         {
             _player.BuyWeapon(weapon);
             weapon.Buy();

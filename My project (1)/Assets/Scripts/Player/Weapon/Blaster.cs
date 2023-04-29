@@ -9,6 +9,11 @@ public class Blaster : Weapon
     private int _criticalDamage = 15;
     private int _chance = 5;
 
+    private void ResetDamage()
+    {
+        _criticalDamage = 0;
+    }
+
     public override void Shoot(Transform shootPoint)
     {
         float randomNum = Random.Range(1, 101);
@@ -20,6 +25,7 @@ public class Blaster : Weapon
             Debug.Log("Crit!!!");
             instance.transform.position = shootPoint.position;
             instance.SetActive(true);
+            ResetDamage();
         }
         else
         {

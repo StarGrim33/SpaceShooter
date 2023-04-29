@@ -497,7 +497,7 @@ MonoBehaviour:
   _button: {fileID: 192312493}
   _healthUpgrade: {fileID: 11400000, guid: 80109516acbd80e44a6d58a8c050dc03, type: 2}
   _health: {fileID: 898663335}
-  _player: {fileID: 898663334}
+  _wallet: {fileID: 898663342}
 --- !u!114 &192312493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,7 +646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _money: {fileID: 2108452625}
-  _player: {fileID: 898663334}
+  _wallet: {fileID: 898663342}
 --- !u!114 &207407451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1478,13 +1478,13 @@ MonoBehaviour:
   _hunterBulletsCount: 13
   _hunterBullet: {fileID: 2752997920387845336, guid: ed3d8badaf26eb54dbd7a98ab015d8cf, type: 3}
   _hunterBulletContainer: {fileID: 351890977}
-  _firstBossBulletCount: 13
+  _firstBossBulletCount: 20
   _firstBossBullet: {fileID: 1406497500899140257, guid: 877e672ed717423458e31cced41c6eb9, type: 3}
   _firstBossBulletContainer: {fileID: 351890977}
-  _secondBossBulletCount: 13
+  _secondBossBulletCount: 50
   _secondBossBullet: {fileID: 1597089446139856165, guid: 343c925602de8654192be45a076c8307, type: 3}
   _secondBossBulletContainer: {fileID: 351890977}
-  _thirdBossBulletCount: 13
+  _thirdBossBulletCount: 100
   _thirdBossBullet: {fileID: 3796806096798350123, guid: b835f9b2f9351ff49804a82d0a7f0f35, type: 3}
   _thirdBossBulletContainer: {fileID: 351890977}
 --- !u!1 &371737929
@@ -1650,7 +1650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 727f0a96f9d00834eba78f4cb3350b19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _delay: 50
+  _delay: 5
   _newBackground:
   - {fileID: 2800000, guid: c5ba0ac5b050e9344a1926deb977a2b6, type: 3}
   - {fileID: 2800000, guid: be2ccff001f74064ab76a162d133b2ba, type: 3}
@@ -2460,34 +2460,34 @@ MonoBehaviour:
     _amount: 3
   - _enemyPrefab: {fileID: 5072270444568649117, guid: 1c18002a37b10de4fa7b69c9f11835fa, type: 3}
     _delay: 1
-    _amount: 8
-  - _enemyPrefab: {fileID: 2937215908602354678, guid: 615c406f4a513154784f08df05d31680, type: 3}
-    _delay: 1
     _amount: 5
   - _enemyPrefab: {fileID: 2937215908602354678, guid: 615c406f4a513154784f08df05d31680, type: 3}
     _delay: 1
-    _amount: 9
-  - _enemyPrefab: {fileID: 5072270444568649117, guid: 1c18002a37b10de4fa7b69c9f11835fa, type: 3}
-    _delay: 1
-    _amount: 10
-  - _enemyPrefab: {fileID: 8271332347671186807, guid: d45e902a025412540ad3926777aa2aa7, type: 3}
+    _amount: 3
+  - _enemyPrefab: {fileID: 2937215908602354678, guid: 615c406f4a513154784f08df05d31680, type: 3}
     _delay: 1
     _amount: 6
+  - _enemyPrefab: {fileID: 5072270444568649117, guid: 1c18002a37b10de4fa7b69c9f11835fa, type: 3}
+    _delay: 1
+    _amount: 8
+  - _enemyPrefab: {fileID: 8271332347671186807, guid: d45e902a025412540ad3926777aa2aa7, type: 3}
+    _delay: 1
+    _amount: 4
   - _enemyPrefab: {fileID: 2822473606530159504, guid: d7906075ee4f5ed4ba0eabe9abaafaaf, type: 3}
     _delay: 1
     _amount: 2
   - _enemyPrefab: {fileID: 8271332347671186807, guid: d45e902a025412540ad3926777aa2aa7, type: 3}
     _delay: 1
-    _amount: 12
+    _amount: 8
   - _enemyPrefab: {fileID: 2937215908602354678, guid: 615c406f4a513154784f08df05d31680, type: 3}
     _delay: 1
-    _amount: 12
+    _amount: 8
   - _enemyPrefab: {fileID: 5072270444568649117, guid: 1c18002a37b10de4fa7b69c9f11835fa, type: 3}
     _delay: 1
     _amount: 12
   - _enemyPrefab: {fileID: 2822473606530159504, guid: d7906075ee4f5ed4ba0eabe9abaafaaf, type: 3}
     _delay: 1
-    _amount: 5
+    _amount: 4
   - _enemyPrefab: {fileID: 4218435741028626678, guid: ec28fe1d31519fe42a4140d97c75d2ca, type: 3}
     _delay: 1
     _amount: 3
@@ -2505,7 +2505,7 @@ MonoBehaviour:
     _amount: 16
   - _enemyPrefab: {fileID: 4218435741028626678, guid: ec28fe1d31519fe42a4140d97c75d2ca, type: 3}
     _delay: 1
-    _amount: 7
+    _amount: 8
   - _enemyPrefab: {fileID: 2822473606530159504, guid: d7906075ee4f5ed4ba0eabe9abaafaaf, type: 3}
     _delay: 1
     _amount: 6
@@ -2549,9 +2549,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _bossPrefab: {fileID: 4412394258530764861, guid: a8e5ee6ec04614e4a9383e88a0b2904b, type: 3}
   _spawner: {fileID: 495694769}
-  _boss: {fileID: 4412394258530764851, guid: a8e5ee6ec04614e4a9383e88a0b2904b, type: 3}
-  _victoryScreen: {fileID: 983846118}
-  _victorySound: {fileID: 983846119}
 --- !u!1 &499036782
 GameObject:
   m_ObjectHideFlags: 0
@@ -2655,7 +2652,7 @@ GameObject:
   - component: {fileID: 506759622}
   m_Layer: 0
   m_Name: BossTargetPosition
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2805,11 +2802,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 9f5bad26fa8d2804296dfc3adf701a20, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 0.096
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -3076,7 +3073,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9764151, b: 0.99482286, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeIntensityEnabled: 0
@@ -3741,11 +3738,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3157483472541429372, guid: caf9732433f4dc044845763962493607, type: 3}
       propertyPath: pauseType
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3157483472541429372, guid: caf9732433f4dc044845763962493607, type: 3}
       propertyPath: pauseMethod
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3157483472541429372, guid: caf9732433f4dc044845763962493607, type: 3}
+      propertyPath: closingADValues.audioPause
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: caf9732433f4dc044845763962493607, type: 3}
@@ -3798,6 +3799,7 @@ GameObject:
   - component: {fileID: 898663339}
   - component: {fileID: 898663340}
   - component: {fileID: 898663341}
+  - component: {fileID: 898663342}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3895,13 +3897,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d9982dabd0620f468cc7137715eeedd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coins: 0
   _shootPosition: {fileID: 891148683}
   _bullet: {fileID: 3021144253031942006, guid: 1740469607c5ef74a9dce354e6c48998, type: 3}
   _weapons:
   - {fileID: 6782009726138127899, guid: db16df244c68be9468d0f6c3639e8bd0, type: 3}
   _playSound: {fileID: 8300000, guid: 3eab29a6bef99284e82d2bd45a245e78, type: 3}
-  _shieldController: {fileID: 898663340}
   _pickupSound: {fileID: 8300000, guid: 4fb135d3c45ee7343ba34122f8adc35f, type: 3}
 --- !u!114 &898663335
 MonoBehaviour:
@@ -3917,6 +3917,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 0
   _maxHealth: 100
+  _shield: {fileID: 898663340}
 --- !u!95 &898663336
 Animator:
   serializedVersion: 4
@@ -3945,7 +3946,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898663331}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.35, y: 0.16, z: 0}
+  m_LocalPosition: {x: -7.8, y: -0.29, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4107,6 +4108,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &898663342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898663331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25e70184206d5dd4e98ab6835e249589, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _coins: 0
 --- !u!1 &907929910
 GameObject:
   m_ObjectHideFlags: 0
@@ -5025,7 +5039,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 45.8
+  m_fontSize: 50.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5354,7 +5368,7 @@ GameObject:
   - component: {fileID: 1194587494}
   - component: {fileID: 1194587493}
   m_Layer: 0
-  m_Name: GameOverManager
+  m_Name: GameOver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5375,6 +5389,9 @@ MonoBehaviour:
   _health: {fileID: 898663335}
   _gameOverScreen: {fileID: 1660028115}
   _faultSound: {fileID: 1660028119}
+  _victoryScreen: {fileID: 983846118}
+  _victorySound: {fileID: 983846119}
+  _spawner: {fileID: 495694770}
 --- !u!4 &1194587494
 Transform:
   m_ObjectHideFlags: 0
@@ -6091,17 +6108,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1405313981}
-        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: OpenPanel
-        m_Mode: 2
+      - m_Target: {fileID: 1405313976}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
-          m_ObjectArgument: {fileID: 1405313976}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1378069053
 MonoBehaviour:
@@ -6201,7 +6218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.06732824, g: 0.06873683, b: 0.16037738, a: 1}
+  m_Color: {r: 0.07742968, g: 0.08584224, b: 0.18867922, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6240,6 +6257,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weapons:
   - {fileID: 6200821667877259669, guid: 2cd51c91fa4256043808c861a1900a07, type: 3}
+  _wallet: {fileID: 898663342}
   _player: {fileID: 898663334}
   _itemContainer: {fileID: 1936061418}
   _template: {fileID: 4631730219672273351, guid: ae6a8a5500fd0264c8e18260cf4b0042, type: 3}
@@ -6340,7 +6358,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1037833663}
   m_HandleRect: {fileID: 1037833662}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6668,12 +6686,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 1427927506}
-  _damagehUpgrade: {fileID: 11400000, guid: 1bf6a6d25bb33ec47afbcac4986f7d61, type: 2}
+  _damageUpgrade: {fileID: 0}
   _bullet: {fileID: 1019480068096796, guid: 1740469607c5ef74a9dce354e6c48998, type: 3}
   _machineGunBullet: {fileID: 6183757303428193945, guid: 7dac936ba27efab4c960045df9d7c6e1, type: 3}
-  _player: {fileID: 898663334}
+  _wallet: {fileID: 0}
   _pool: {fileID: 351890979}
-  _machineGun: {fileID: 6200821667877259669, guid: 2cd51c91fa4256043808c861a1900a07, type: 3}
 --- !u!1 &1429004437
 GameObject:
   m_ObjectHideFlags: 0
@@ -6726,7 +6743,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _money: {fileID: 1429004440}
-  _player: {fileID: 898663334}
+  _wallet: {fileID: 898663342}
 --- !u!114 &1429004440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7484,10 +7501,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1145bb002baef4ea5949a9afbbf4c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _button: {fileID: 0}
+  _button: {fileID: 192312493}
   _healthUpgrade: {fileID: 11400000, guid: 80109516acbd80e44a6d58a8c050dc03, type: 2}
   _health: {fileID: 898663335}
-  _player: {fileID: 898663334}
+  _wallet: {fileID: 898663342}
 --- !u!1 &1648796371
 GameObject:
   m_ObjectHideFlags: 0
@@ -8282,7 +8299,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1864861694}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: MainMenuNavigator, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
@@ -8343,8 +8360,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 792c621a40f054f43ba98114e88acc3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _deadScreen: {fileID: 0}
+  _player: {fileID: 898663334}
+  _deadScreen: {fileID: 1660028115}
 --- !u!1 &1884115293
 GameObject:
   m_ObjectHideFlags: 0
@@ -8857,12 +8874,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _button: {fileID: 2049090142}
-  _damagehUpgrade: {fileID: 11400000, guid: 1bf6a6d25bb33ec47afbcac4986f7d61, type: 2}
+  _damageUpgrade: {fileID: 11400000, guid: 1bf6a6d25bb33ec47afbcac4986f7d61, type: 2}
   _bullet: {fileID: 1019480068096796, guid: 1740469607c5ef74a9dce354e6c48998, type: 3}
   _machineGunBullet: {fileID: 6183757303428193945, guid: 7dac936ba27efab4c960045df9d7c6e1, type: 3}
-  _player: {fileID: 898663334}
+  _wallet: {fileID: 898663342}
   _pool: {fileID: 351890979}
-  _machineGun: {fileID: 6200821667877259669, guid: 2cd51c91fa4256043808c861a1900a07, type: 3}
 --- !u!114 &2049090142
 MonoBehaviour:
   m_ObjectHideFlags: 0

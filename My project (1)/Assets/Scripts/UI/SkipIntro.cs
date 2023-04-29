@@ -1,11 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 using YG;
 
-public class SkipIntro : MonoBehaviour
+public class SkipIntro
 {
     public void Skip()
     {

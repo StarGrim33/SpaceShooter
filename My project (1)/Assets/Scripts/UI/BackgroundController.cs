@@ -1,10 +1,7 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
-using UnityEngine.UIElements;
 
 public class BackgroundController : MonoBehaviour
 {
@@ -22,9 +19,11 @@ public class BackgroundController : MonoBehaviour
 
     private IEnumerator ChangeBackgroundCoroutine()
     {
-        while(_newBackground.Length != 0)
+        var waitForSeconds = new WaitForSeconds(_delay);
+
+        while (_newBackground.Length != 0)
         {
-            yield return new WaitForSeconds(_delay);
+            yield return waitForSeconds;
 
             float duration = 1f;
             float elapsedTime = 0f;
