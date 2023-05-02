@@ -1,5 +1,5 @@
 using UnityEngine;
 
-public class Border
+public class Border : MonoBehaviour
 {
 }

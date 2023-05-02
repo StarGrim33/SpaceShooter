@@ -282,12 +282,12 @@ GameObject:
   - component: {fileID: 4218435741028626681}
   - component: {fileID: 4218435741028626680}
   - component: {fileID: 4218435741028626679}
-  - component: {fileID: 4296319662350194014}
   - component: {fileID: 2491346450582297853}
   - component: {fileID: 2756595929305003571}
   - component: {fileID: 1762763743556799453}
   - component: {fileID: 4172429021072216404}
   - component: {fileID: 1162739039293346747}
+  - component: {fileID: 5746139560479335255}
   m_Layer: 0
   m_Name: Hunter
   m_TagString: Untagged
@@ -451,21 +451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: {fileID: 2491346450582297853}
   _shield: {fileID: 4218435741410713029}
---- !u!114 &4296319662350194014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4218435741028626678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fbda935d63bba347b60177c220d7e0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shootPoint: {fileID: 1169533851935732139}
-  _delay: 2
-  _bullets: {fileID: 2752997920387845336, guid: ed3d8badaf26eb54dbd7a98ab015d8cf, type: 3}
 --- !u!114 &2491346450582297853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +526,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _reward: 400
+--- !u!114 &5746139560479335255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4218435741028626678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc57624f84724849ac6908755d460ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shootPoint: {fileID: 1169533851935732139}
+  _delay: 2
+  _enemyBullet: {fileID: 2752997920387845336, guid: ed3d8badaf26eb54dbd7a98ab015d8cf, type: 3}
 --- !u!1 &4218435741410713028
 GameObject:
   m_ObjectHideFlags: 0

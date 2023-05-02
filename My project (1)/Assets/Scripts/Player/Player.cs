@@ -40,17 +40,7 @@ public class Player : Unit
 
     private void Update()
     {
-        _timer -= Time.deltaTime;
-
-        if (Input.GetButton("Fire1"))
-        {
-            if(_timer <= 0f)
-            {
-                _currentWeapon.Shoot(_shootPosition);
-                AudioSource.PlayClipAtPoint(_playSound, transform.position, 0.2f);
-                _timer = _shootTimer;
-            }
-        }
+        StartCoroutine(Shoot());
     }
 
     private void ChangeWeapon(Weapon weapon)
@@ -76,5 +66,24 @@ public class Player : Unit
         }
 
         ChangeWeapon(_weapons[_currentWeaponNumber]);
+    }
+
+    private IEnumerator Shoot()
+    {
+        var waitForSeconds = new WaitForSeconds(_shootTimer);
+
+        _timer -= Time.deltaTime;
+
+        if (Input.GetButton("Fire1"))
+        {
+            if (_timer <= 0f)
+            {
+                _currentWeapon.Shoot(_shootPosition);
+                AudioSource.PlayClipAtPoint(_playSound, transform.position, 0.2f);
+                _timer = _shootTimer;
+            }
+        }
+
+        yield return waitForSeconds;
     }
 }

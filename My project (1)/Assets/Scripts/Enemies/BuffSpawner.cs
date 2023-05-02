@@ -9,8 +9,9 @@ public class BuffSpawner : MonoBehaviour
         int minNumber = 0;
         int maxNumber = 100;
         int chance = 50;
+        float displayBorder = 7f; 
 
-        if (Random.Range(minNumber, maxNumber) <= chance && transform.position.x <= 7f)
+        if (Random.Range(minNumber, maxNumber) <= chance && transform.position.x <= displayBorder)
         {
             SpawnBuff();
         }

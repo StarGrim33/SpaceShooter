@@ -34,7 +34,7 @@ public class Boss : Unit
 
     private void Update()
     {
-        StageSwitcher();
+        StageSwitch();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -45,7 +45,7 @@ public class Boss : Unit
         }
     }
 
-    private void StageSwitcher()
+    private void StageSwitch()
     {
         if (_health.CurrentHealth <= _healthPerPhase * _secondsStage && _currentPhase < _secondsStage)
         {

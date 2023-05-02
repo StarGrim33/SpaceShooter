@@ -48,30 +48,6 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector2 position = transform.position;
 
-        //Vector3 viewportPosition = _mainCamera.WorldToViewportPoint(position);
-
-        //// Проверяем, выходит ли игрок за пределы экрана
-        //if (viewportPosition.x < 0.0f)
-        //{
-        //    position.x = _minWidth;
-        //}
-        //else if (viewportPosition.x > 1f)
-        //{
-        //    position.x = _maxWidth;
-        //}
-
-        //if (viewportPosition.y < 0f)
-        //{
-        //    position.y = _minHeight;
-        //}
-        //else if (viewportPosition.y > 1f)
-        //{
-        //    position.y = _maxHeight;
-        //}
-
-        //transform.position = position;
-        //_rb.velocity = _moveDirection * (_speed * Time.deltaTime);
-
         position.x = Mathf.Clamp(position.x, _minWidth, _maxWidth);
         position.y = Mathf.Clamp(position.y, _minHeight, _maxHeight);
         transform.position = position;
@@ -88,11 +64,6 @@ public class PlayerMovement : MonoBehaviour
         _moveDirection = Vector2.zero;
     }
 
-    public void ChangeSpeed(float value, float duration)
-    {
-        StartCoroutine(SpeedBoost(value, duration));
-    }
-
     private IEnumerator SpeedBoost(float value, float duration)
     {
         var waitForSeconds = new WaitForSeconds(duration);
@@ -102,5 +73,10 @@ public class PlayerMovement : MonoBehaviour
         yield return waitForSeconds;
 
         Speed -= value;
+    }
+
+    public void ChangeSpeed(float value, float duration)
+    {
+        StartCoroutine(SpeedBoost(value, duration));
     }
 }

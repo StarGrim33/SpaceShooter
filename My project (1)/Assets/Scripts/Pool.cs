@@ -89,23 +89,23 @@ public class Pool : MonoBehaviour
         {
             list = _enemyRockets;
         }
-        else if(prefab == _hunterBullet)
+        else if (prefab == _hunterBullet)
         {
             list = _hunterBullets;
         }
-        else if(prefab == _playerMachineGunBullet)
+        else if (prefab == _playerMachineGunBullet)
         {
             list = _machineGunBullets;
         }
-        else if(prefab == _firstBossBullet)
+        else if (prefab == _firstBossBullet)
         {
             list = _firstBossBullets;
         }
-        else if(prefab == _secondBossBullet)
+        else if (prefab == _secondBossBullet)
         {
             list = _secondBossBullets;
         }
-        else if(prefab == _thirdBossBullet)
+        else if (prefab == _thirdBossBullet)
         {
             list = _thirdBossBullets;
         }
@@ -127,9 +127,16 @@ public class Pool : MonoBehaviour
     {
         if (prefab == _playerBullet)
         {
-            for(int i = 0; i < _playerBullets.Count; i++)
+            for (int i = 0; i < _playerBullets.Count; i++)
             {
                 _playerBullets[i].GetComponent<Bullet>().UpgradeDamage(value);
+            }
+        }
+        else if (prefab == _playerMachineGunBullet)
+        {
+            for(int i = 0; i < _machineGunBullets.Count; i++)
+            {
+                _machineGunBullets[i].GetComponent<MachineGunBullet>().UpgradeDamage(value);
             }
         }
     }

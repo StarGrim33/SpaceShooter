@@ -1,34 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PoolObject))]
-public class Bullet : MonoBehaviour
+public class Bullet : BasePlayerBullet
 {
-    [SerializeField] private int _damage;
-    [SerializeField] private float _speed;
-    [SerializeField] private float _lifeTime;
+    private int _damage = 10;
+    private float _speed = 14f;
 
-    public int Damage => _damage;
-
-    private PoolObject _poolObject;
-
-    private void Start()
+    protected override void Update()
     {
-        _poolObject = GetComponent<PoolObject>();
+        transform.position = Vector3.MoveTowards(transform.position, transform.position + Vector3.right, _speed  * Time.deltaTime);
     }
 
-    private void OnEnable()
-    {
-        StartCoroutine(Destroy());
-    }
-
-    private void Update()
-    {
-        transform.position = Vector3.MoveTowards(transform.position, transform.position + Vector3.right, _speed * Time.deltaTime);
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<EnemyHealth>(out EnemyHealth enemy))
         {
@@ -41,18 +23,6 @@ public class Bullet : MonoBehaviour
             boss.TakeDamage(_damage);
             _poolObject.ReturnToPool();
         }
-
-        if (collision.TryGetComponent<SimpleBullet>(out SimpleBullet simpleBullet))
-        {
-            _poolObject.ReturnToPool();
-        }
-    }
-
-    private IEnumerator Destroy()
-    {
-        var waitForSeconds = new WaitForSeconds(_lifeTime);
-        yield return waitForSeconds;
-        _poolObject.ReturnToPool();
     }
 
     public void UpgradeDamage(int value)

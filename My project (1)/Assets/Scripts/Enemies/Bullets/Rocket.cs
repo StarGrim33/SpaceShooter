@@ -1,17 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(PoolObject))]
-public class Rocket : MonoBehaviour
+public class Rocket : BaseEnemyBullet
 {
-    [SerializeField] private int _damage;
-    [SerializeField] private float _speed;
-    [SerializeField] private float _lifeTime;
-    private Player _player;
-
-    private Vector2 _target;
-    private PoolObject _poolObject;
+    private int _damage = 15;
+    private float _speed = 10f;
     private float _range = 10f;
 
     private void Start()
@@ -21,17 +13,12 @@ public class Rocket : MonoBehaviour
         _target = new Vector2(_player.transform.position.x - _range, _player.transform.position.y);
     }
 
-    private void OnEnable()
-    {
-        StartCoroutine(Destroy());
-    }
-
-    private void Update()
+    protected override void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, _target, _speed * Time.deltaTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    protected override void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent<Health>(out Health player))
         {
@@ -43,12 +30,10 @@ public class Rocket : MonoBehaviour
         {
             _poolObject.ReturnToPool();
         }
-    }
 
-    private IEnumerator Destroy()
-    {
-        var waitForSeconds = new WaitForSeconds(_lifeTime);
-        yield return waitForSeconds;
-        _poolObject.ReturnToPool();
+        if(collision.TryGetComponent<MachineGunBullet>(out MachineGunBullet machineGunBullet))
+        {
+            _poolObject.ReturnToPool();
+        }
     }
 }

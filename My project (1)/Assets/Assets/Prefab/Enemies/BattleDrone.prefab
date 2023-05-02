@@ -114,7 +114,6 @@ GameObject:
   - component: {fileID: 2937215908602354682}
   - component: {fileID: 2937215908602354683}
   - component: {fileID: 6892104420164220791}
-  - component: {fileID: 2937215908602354677}
   - component: {fileID: 3827578537825477213}
   - component: {fileID: 7113440186452366368}
   - component: {fileID: 541672620391110719}
@@ -122,6 +121,7 @@ GameObject:
   - component: {fileID: 6229681123609727321}
   - component: {fileID: 433246546847978499}
   - component: {fileID: 902094013498079601}
+  - component: {fileID: 3340668844263074584}
   m_Layer: 0
   m_Name: BattleDrone
   m_TagString: Untagged
@@ -258,21 +258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bee1abe1259084f91f2ea53d1018bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2937215908602354677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2937215908602354678}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f515d36887521844db31df3a12d2dea9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shootPoint: {fileID: 2937215910078165514}
-  _delay: 5
-  _enemyBullet: {fileID: 4304274256210937237, guid: e0b4278a0236aca4393c160cde78c734, type: 3}
 --- !u!114 &3827578537825477213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,8 +360,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d024e1b21dd27b4ca53a67e73eefd5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallet: {fileID: 0}
   _reward: 150
+--- !u!114 &3340668844263074584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2937215908602354678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acc57624f84724849ac6908755d460ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shootPoint: {fileID: 2937215910078165514}
+  _delay: 4
+  _enemyBullet: {fileID: 4304274256210937237, guid: e0b4278a0236aca4393c160cde78c734, type: 3}
 --- !u!1 &2937215909375601955
 GameObject:
   m_ObjectHideFlags: 0

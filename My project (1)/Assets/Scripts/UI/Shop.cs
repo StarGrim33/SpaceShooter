@@ -11,6 +11,16 @@ public class Shop : MonoBehaviour
     [SerializeField] private WeaponView _template;
     [SerializeField] private HealthUpgrade _healthUpgrade;
 
+    private void OnEnable()
+    {
+        Time.timeScale = 0f;
+    }
+
+    private void OnDisable()
+    {
+        Time.timeScale = 1f;
+    }
+
     private void Start()
     {
         for(int i = 0;  i < _weapons.Count; i++)
