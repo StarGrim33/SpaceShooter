@@ -10,10 +10,7 @@ public class RewardEnemy : MonoBehaviour
 
     private void Start()
     {
-        _wallet = FindObjectOfType<Wallet>();
-
-        if (_wallet != null)
-            Debug.Log("Found");
+        _wallet = Wallet.Instance;
     }
 
     private void OnEnable()

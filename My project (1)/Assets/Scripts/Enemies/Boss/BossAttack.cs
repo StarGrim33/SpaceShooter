@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public enum BossStages
@@ -14,9 +15,13 @@ public class BossAttack : MonoBehaviour
     [SerializeField] private Transform[] _attackSpawnPoint;
     [SerializeField] private Boss _boss;
 
-    private float _shotDelay = 0.5f;
-
     private float _lastShotTime = 0f;
+    private float _shotDelay = 0.8f;
+    private float _shotDelaySecondPhase = 0.6f;
+    private float _shotDelayThirdPhase = 0.5f;
+    private int _shotsAmountFirstPhase = 5;
+    private int _shotAmountSecondPhase = 7;
+    private int _shotAmountThirdPhase = 8;
 
     private void OnEnable()
     {
@@ -27,21 +32,17 @@ public class BossAttack : MonoBehaviour
     {
         if (stageNumber == (int)BossStages.Second)
         {
-            _shotDelay = 0.8f;
+            _shotDelay = _shotDelaySecondPhase;
         }
         else if (stageNumber == (int)BossStages.Third)
         {
-            _shotDelay = 0.5f;
+            _shotDelay = _shotDelayThirdPhase;
         }
     }
 
     private void Update()
     {
-        if (Time.time - _lastShotTime >= _shotDelay)
-        {
-            Shoot();
-            _lastShotTime = Time.time;
-        }
+        StartCoroutine(Assail());
     }
 
     private void Shoot()
@@ -52,7 +53,7 @@ public class BossAttack : MonoBehaviour
             {
                 int randomShootPoint = Random.Range(0, _attackSpawnPoint.Length);
 
-                for (int i = 0; i < 5; i++)
+                for (int i = 0; i <= _shotsAmountFirstPhase; i++)
                 {
                     GameObject attack = Pool.SharedInstance.GetObject(_attackPrefabs[_boss.CurrentPhase - 1]);
 
@@ -67,7 +68,7 @@ public class BossAttack : MonoBehaviour
             {
                 int randomShootPoint = Random.Range(0, _attackSpawnPoint.Length);
 
-                for (int i = 0; i < 7; i++)
+                for (int i = 0; i <= _shotAmountSecondPhase; i++)
                 {
                     GameObject attack = Pool.SharedInstance.GetObject(_attackPrefabs[_boss.CurrentPhase - 1]);
 
@@ -82,7 +83,7 @@ public class BossAttack : MonoBehaviour
             {
                 int randomShootPoint = Random.Range(0, _attackSpawnPoint.Length);
 
-                for (int i = 0; i < 8; i++)
+                for (int i = 0; i <= _shotAmountThirdPhase; i++)
                 {
                     GameObject attack = Pool.SharedInstance.GetObject(_attackPrefabs[_boss.CurrentPhase - 1]);
 
@@ -94,5 +95,18 @@ public class BossAttack : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator Assail()
+    {
+        var waitForSeconds = new WaitForSeconds(_shotDelay);
+
+        if (Time.time - _lastShotTime >= _shotDelay)
+        {
+            Shoot();
+            _lastShotTime = Time.time;
+        }
+
+        yield return waitForSeconds;
     }
 }

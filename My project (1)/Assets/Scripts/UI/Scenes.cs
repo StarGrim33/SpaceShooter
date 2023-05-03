@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Scenes
+public class Scenes : MonoBehaviour
 {
     public string GameScene => _gameScene;
 

@@ -50,12 +50,12 @@ public class Boss : Unit
         if (_health.CurrentHealth <= _healthPerPhase * _secondsStage && _currentPhase < _secondsStage)
         {
             StartCoroutine(StageTransition(_secondsStage));
-            StageChanged?.Invoke(2);
+            StageChanged?.Invoke((int)BossStages.Second);
         }
         else if (_health.CurrentHealth <= _healthPerPhase  && _currentPhase < _thirdStage)
         {
             StartCoroutine(StageTransition(_thirdStage));
-            StageChanged?.Invoke(3);
+            StageChanged?.Invoke((int)BossStages.Third);
         }
     }
 
