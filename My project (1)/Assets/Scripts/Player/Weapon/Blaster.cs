@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Blaster : Weapon
@@ -20,18 +18,17 @@ public class Blaster : Weapon
 
         if (randomNum <= _chance)
         {
-            GameObject instance = Pool.SharedInstance.GetObject(_playerBullet);
-            instance.GetComponent<Bullet>().UpgradeDamage(_criticalDamage);
-            Debug.Log("Crit!!!");
+            Bullet instance = BlasterPool.Instance.GetObject();
+            instance.UpgradeDamage(_criticalDamage);
             instance.transform.position = shootPoint.position;
-            instance.SetActive(true);
+            instance.gameObject.SetActive(true);
             ResetDamage();
         }
         else
         {
-            GameObject instance = Pool.SharedInstance.GetObject(_playerBullet);
+            Bullet instance = BlasterPool.Instance.GetObject();
             instance.transform.position = shootPoint.position;
-            instance.SetActive(true);
+            instance.gameObject.SetActive(true);
         }
     }
 }

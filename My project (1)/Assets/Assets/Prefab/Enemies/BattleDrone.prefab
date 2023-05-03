@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 6229681123609727321}
   - component: {fileID: 433246546847978499}
   - component: {fileID: 902094013498079601}
-  - component: {fileID: 3340668844263074584}
+  - component: {fileID: 8515034890206594148}
   m_Layer: 0
   m_Name: BattleDrone
   m_TagString: Untagged
@@ -361,7 +361,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _reward: 150
---- !u!114 &3340668844263074584
+--- !u!114 &8515034890206594148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -370,12 +370,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2937215908602354678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc57624f84724849ac6908755d460ce, type: 3}
+  m_Script: {fileID: 11500000, guid: dc694750610455a45a0142984c2201da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shootPoint: {fileID: 2937215910078165514}
-  _delay: 4
-  _enemyBullet: {fileID: 4304274256210937237, guid: e0b4278a0236aca4393c160cde78c734, type: 3}
+  _droneShootPoint: {fileID: 2937215910078165514}
 --- !u!1 &2937215909375601955
 GameObject:
   m_ObjectHideFlags: 0

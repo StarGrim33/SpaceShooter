@@ -279,7 +279,6 @@ GameObject:
   - component: {fileID: 6072974338669280822}
   - component: {fileID: 7742042389275901432}
   - component: {fileID: 6390056416724115225}
-  - component: {fileID: 2022036115978795238}
   - component: {fileID: 8626755887071501884}
   - component: {fileID: 3872837448985948541}
   - component: {fileID: 3965951088515089059}
@@ -288,6 +287,7 @@ GameObject:
   - component: {fileID: 788028206797893509}
   - component: {fileID: -5745442644056980}
   - component: {fileID: -6754297701546577234}
+  - component: {fileID: 6413289519210481136}
   m_Layer: 0
   m_Name: Patrol
   m_TagString: Untagged
@@ -402,21 +402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2bee1abe1259084f91f2ea53d1018bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2022036115978795238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8271332347671186807}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc57624f84724849ac6908755d460ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shootPoint: {fileID: 2848591311120354487}
-  _delay: 2
-  _enemyBullet: {fileID: 2139291380455049876, guid: 4ef72830c67c45345be622f539081f4a, type: 3}
 --- !u!114 &8626755887071501884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,3 +526,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _reward: 300
+--- !u!114 &6413289519210481136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8271332347671186807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b9de5a7bc190cb4baf4fdf48a926e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _droneShootPoint: {fileID: 2848591311120354487}

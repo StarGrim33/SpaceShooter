@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MachineGun : Weapon
@@ -20,17 +18,17 @@ public class MachineGun : Weapon
 
         if (randomNum <= _chance)
         {
-            GameObject instance = Pool.SharedInstance.GetObject(_playerBullet);
-            instance.GetComponent<MachineGunBullet>().UpgradeDamage(_criticalDamage);
+            MachineGunBullet instance = MachineGunPool.Instance.GetObject();
+            instance.UpgradeDamage(_criticalDamage);
             instance.transform.position = shootPoint.position;
-            instance.SetActive(true);
+            instance.gameObject.SetActive(true);
             ResetDamage();
         }
         else
         {
-            GameObject instance = Pool.SharedInstance.GetObject(_playerBullet);
+            MachineGunBullet instance = MachineGunPool.Instance.GetObject();
             instance.transform.position = shootPoint.position;
-            instance.SetActive(true);
+            instance.gameObject.SetActive(true);
         }
     }
 }

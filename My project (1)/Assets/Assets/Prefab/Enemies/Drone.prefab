@@ -148,12 +148,12 @@ GameObject:
   - component: {fileID: 5072270444568649119}
   - component: {fileID: 5072270444568649116}
   - component: {fileID: 5072270444568649114}
-  - component: {fileID: 5072270444568649188}
   - component: {fileID: 6518346298734906861}
   - component: {fileID: 2257021608351985319}
   - component: {fileID: 7813979731756779077}
   - component: {fileID: 5283053528353250099}
   - component: {fileID: -4861271218159061426}
+  - component: {fileID: 972139487616351452}
   m_Layer: 0
   m_Name: Drone
   m_TagString: Untagged
@@ -337,21 +337,6 @@ MonoBehaviour:
   _amplitude: 0.5
   _frequency: 2
   _isInverted: 1
---- !u!114 &5072270444568649188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5072270444568649117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc57624f84724849ac6908755d460ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _shootPoint: {fileID: 5072270443460861066}
-  _delay: 2
-  _enemyBullet: {fileID: 2139291380455049876, guid: 4ef72830c67c45345be622f539081f4a, type: 3}
 --- !u!114 &6518346298734906861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -426,8 +411,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d024e1b21dd27b4ca53a67e73eefd5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _wallet: {fileID: 0}
   _reward: 75
+--- !u!114 &972139487616351452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5072270444568649117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a281b290b10a19945a857905966ab6a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shootPoint: {fileID: 5072270443460861066}
+  _delay: 2
+  _droneShootPoint: {fileID: 5072270443460861066}
 --- !u!1 &5807852745302527901
 GameObject:
   m_ObjectHideFlags: 0

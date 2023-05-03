@@ -9,7 +9,7 @@ public enum BossStages
 }
 
 [RequireComponent(typeof(Boss))]
-public class BossAttack : MonoBehaviour
+public class BossAttack : Attack
 {
     [SerializeField] private GameObject[] _attackPrefabs;
     [SerializeField] private Transform[] _attackSpawnPoint;
@@ -40,12 +40,7 @@ public class BossAttack : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        StartCoroutine(Assail());
-    }
-
-    private void Shoot()
+    protected override void Shoot()
     {
         if (_boss.CurrentPhase <= _attackPrefabs.Length)
         {
@@ -55,12 +50,12 @@ public class BossAttack : MonoBehaviour
 
                 for (int i = 0; i <= _shotsAmountFirstPhase; i++)
                 {
-                    GameObject attack = Pool.SharedInstance.GetObject(_attackPrefabs[_boss.CurrentPhase - 1]);
+                    SimpleBossBullet attack = SimpleBossBulletsPool.Instance.GetObject();
 
                     if (attack != null)
                     {
                         attack.transform.position = _attackSpawnPoint[randomShootPoint].position;
-                        attack.SetActive(true);
+                        attack.gameObject.SetActive(true);
                     }
                 }
             }
@@ -70,34 +65,34 @@ public class BossAttack : MonoBehaviour
 
                 for (int i = 0; i <= _shotAmountSecondPhase; i++)
                 {
-                    GameObject attack = Pool.SharedInstance.GetObject(_attackPrefabs[_boss.CurrentPhase - 1]);
+                    LaserBullet attack = LaserBossBulletsPool.Instance.GetObject();
 
                     if (attack != null)
                     {
                         attack.transform.position = _attackSpawnPoint[randomShootPoint].position;
-                        attack.SetActive(true);
+                        attack.gameObject.SetActive(true);
                     }
                 }
             }
-            else if( _boss.CurrentPhase == (int)BossStages.Third)
+            else if (_boss.CurrentPhase == (int)BossStages.Third)
             {
                 int randomShootPoint = Random.Range(0, _attackSpawnPoint.Length);
 
                 for (int i = 0; i <= _shotAmountThirdPhase; i++)
                 {
-                    GameObject attack = Pool.SharedInstance.GetObject(_attackPrefabs[_boss.CurrentPhase - 1]);
+                    BigBullet attack = BigBossBulletsPool.Instance.GetObject();
 
                     if (attack != null)
                     {
                         attack.transform.position = _attackSpawnPoint[randomShootPoint].position;
-                        attack.SetActive(true);
+                        attack.gameObject.SetActive(true);
                     }
                 }
             }
         }
     }
 
-    private IEnumerator Assail()
+    protected override IEnumerator Assail()
     {
         var waitForSeconds = new WaitForSeconds(_shotDelay);
 

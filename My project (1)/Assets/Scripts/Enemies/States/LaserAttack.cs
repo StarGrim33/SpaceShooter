@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class LaserAttack : MonoBehaviour
+public class LaserAttack : Attack
 {
     [SerializeField] private float _distance = 100f;
     [SerializeField] private Transform _shootPoint;
@@ -15,7 +15,7 @@ public class LaserAttack : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(Shoot());
+        StartCoroutine(Assail());
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -26,7 +26,7 @@ public class LaserAttack : MonoBehaviour
         }
     }
 
-    private IEnumerator Shoot()
+    protected override IEnumerator Assail()
     {
         var waitForSeconds = new WaitForSeconds(_displayLaserTime);
         var waitForShootDelay = new WaitForSeconds(_shootDelay);

@@ -8,15 +8,16 @@ public class DamageUpgrader : MonoBehaviour
     [SerializeField] private GameObject _bullet;
     [SerializeField] private GameObject _machineGunBullet;
     [SerializeField] private Wallet _wallet;
-    [SerializeField] private Pool _pool;
+    [SerializeField] private MachineGunPool _machineGunPool;
+    [SerializeField] private BlasterPool _blasterPool;
 
     public void BuyDamageUpgrade()
     {
         if (_wallet.Coins >= _damageUpgrade.Price)
         {
-            _pool.UpdateBullets(_bullet, _damageUpgrade.UpgradeValue);
+            _blasterPool.UpdateBullets(_damageUpgrade.UpgradeValue);
             _wallet.RemoveCoins(_damageUpgrade.Price);
-            _pool.UpdateBullets(_machineGunBullet, _damageUpgrade.UpgradeValue);
+            _machineGunPool.UpdateBullets(_damageUpgrade.UpgradeValue);
         }
     }
 }
